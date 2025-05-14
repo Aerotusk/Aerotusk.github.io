@@ -2,10 +2,13 @@ body {
     background-color: #000000;
   }
   h1 {
-    color: #f8bb76;
+    color: #76cbf8;
+  }
+  h2 {
+    color: #70a9b8;
   }
   p {
-    color: #aeb095;
+    color: #61643a;
   }
   div {
     width:750px;
