@@ -1,9 +1,13 @@
 body {
-    background-color: #000000;
-  }
-  h1 {
-    color: #f8bb76;
-  }
-  p {
-    color: #271717;
-  }
+  background-color: #000000;
+}
+h1 {
+  color: #40a96c;
+}
+p {
+  color: #4a83d8;
+}
+div {
+  width:750px;
+  margin:auto;
+}
