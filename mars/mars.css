@@ -5,5 +5,10 @@ body {
     color: #f8bb76;
   }
   p {
-    color: #271717;
+    color: #604937;
+  }
+  
+  div {
+    width:750px;
+    margin:auto;
   }
