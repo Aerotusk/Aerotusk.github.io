@@ -1,0 +1,13 @@
+body {
+  background-color: #000000;
+}
+h1 {
+  color: #2197f1;
+}
+p {
+  color: #4161e0;
+}
+div {
+  width:750px;
+  margin:auto;
+}
