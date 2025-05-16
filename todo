@@ -1,0 +1,8 @@
+Starry background - create one that will tile seamlessly as you scroll down the page, so pages can be as long as desired
+    (why did I just get déjà vu while thinking about how this project will turn out? Is it because it's in HTML?)
+
+Fade-in animation for the planets - will need to learn JavaScript?
+
+Planet alignment on screen - At first just want to show their orbits and place them randomly. Eventually want to have their orbits update in semi-real-time
+
+Make planet icons look better - probably more comical looking, and probably fewer pixels (maybe need to make them vector graphics, or find a way to turn off anti-aliasing?)
