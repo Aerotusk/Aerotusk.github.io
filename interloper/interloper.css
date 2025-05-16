@@ -1,16 +1,19 @@
 body {
-    background-color: #000000;
-  }
-  h1 {
-    color: #76cbf8;
-  }
-  h2 {
-    color: #70a9b8;
-  }
-  p {
-    color: #61643a;
-  }
-  div {
-    width:750px;
-    margin:auto;
-  }
+  background-image: url("../images/stars.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  color: #76cbf8;
+}
+h2 {
+  color: #70a9b8;
+}
+p {
+  color: #61643a;
+}
+div {
+  width:750px;
+  margin:auto;
+}
