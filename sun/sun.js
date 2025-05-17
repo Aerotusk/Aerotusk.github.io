@@ -1,5 +1,4 @@
 const refDate = new Date("2025-01-01")
-// const date = new Date()
 var planets = ["mercury","venus","earth","mars","jupiter","saturn","uranus","neptune","pluto","interloper"]
 var orbitPeriods = [88.0,224.7,365.2,687.0,4331,10747,30589,59800,90560,1/24] //orbital period in days
 // var orbitPeriods = [0.1/36000,0.15/36000,0.2/36000,0.25/36000,0.3/36000,0.35/36000,0.4/36000,0.45/36000,0.5/36000,0.55/36000] // For debugging purposes
@@ -41,9 +40,7 @@ function planetMovement()
             xCoord -= width / 2;
             yCoord -= height / 2;
             document.getElementById(planets[i]+"Obj").style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
-            document.getElementById(planets[i]+"Obj").style.zIndex = Math.round(yCoord+1000);
+            document.getElementById(planets[i]+"Obj").style.zIndex = Math.round(yCoord+1000); // Set draw order of planets
         }
-        // Set draw order of planets
-
     }
 }
