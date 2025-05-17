@@ -4,30 +4,39 @@
     <head>
         <title>Sun - Aerotusk</title>
         <link rel="stylesheet" href="sun.css">
+        <link rel="stylesheet" href="planets.css">
         <link rel="icon" type="image" href="../images/favicon.png">
     </head>
     <style>
         .content {
-          max-width: 1000px;
+          max-width: 1600px;
           margin: auto;
         }
     </style>
     <body class="content">
+        <svg width="1600" height="1000" style="position:absolute;top:50%;left:50%;transform:translate(-800px,-500px)">
+            <ellipse rx="75" ry="25" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="150" ry="50" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="225" ry="75" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="300" ry="100" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="375" ry="125" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="450" ry="150" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="525" ry="175" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="600" ry="200" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+            <ellipse rx="675" ry="225" cx="50%" cy="50%" style="fill:#00000000;stroke:#9393937d;stroke-width:3;"/>
+        </svg>
         <h1>Welcome to the Sun</h1>
-        <table>
-            <tr>
-                <th><a href="."><img src="../images/Sun.png" alt="The sun" title="Ooooh, ahhhhhh" style="width:128px;height:128px;"></a></th>
-                <th><a href="../mercury/"><img src="../images/Mercury.png" alt="Mercury" title="IT BURNS" style="width:32;height:32px;"></a></th>
-                <th><a href="../venus/"><img src="../images/Venus.png" alt="Venus" title="oh lawdy it's acid rain" style="width:72px;height:72px;"></a></th>
-                <th><a href="../earth/"><img src="../images/Earth.png" alt="Earth" title="wow I finally made it" style="width:75px;height:75px;"></a></th>
-                <th><a href="../mars/"><img src="../images/Mars.png" alt="Mars (Where's Earth?)" title="space piracy is against the united nations code of conduct" style="width:64px;height:64px;"></a></th>
-                <th><a href="../interloper/"><img src="../images/Interloper.png" alt="The Interloper" title="Play Outer Wilds!" style="width:64px;height:64px;"></a></th>
-                <th><a href="../jupiter/"><img src="../images/Jupiter.png" alt="Jupiter" title="Big boi!" style="width:80px;height:80px;"></a></th>
-                <th><a href="../saturn/"><img src="../images/Saturn.png" alt="Saturn" title="i guess he liked it?" style="width:76px;height:76px;"></a></th>
-                <th><a href="../uranus/"><img src="../images/Uranus.png" alt="Uranus" title="yours, not mine" style="width:64px;height:64px;"></a></th>
-                <th><a href="../neptune/"><img src="../images/Neptune.png" alt="Neptune" title="king" style="width:64px;height:64px;"></a></th>
-                <th><a href="../pluto/"><img src="../images/Mercury.png" alt="Pluto" title="itty bitty boi" style="width:16px;height:16px;"></a></th>
-            </tr>
-        </table>
+            <a href="."><img id="sunObj" class="sun" src="../images/Sun.png" alt="The sun" title="Ooooh, ahhhhhh"></a>
+            <a href="../mercury/"><img id="mercuryObj" class="mercury" src="../images/Mercury.png" alt="Mercury" title="IT BURNS"></a>
+            <a href="../venus/"><img id="venusObj" class="venus" src="../images/Venus.png" alt="Venus" title="oh lawdy it's acid rain"></a>
+            <a href="../earth/"><img id="earthObj" class="earth" src="../images/Earth.png" alt="Earth" title="wow I finally made it"></a>
+            <a href="../mars/"><img id="marsObj" class="mars" src="../images/Mars.png" alt="Mars (Where's Earth?)" title="space piracy is against the united nations code of conduct"></a>
+            <a href="../jupiter/"><img id="jupiterObj" class="jupiter" src="../images/Jupiter.png" alt="Jupiter" title="Big boi!"></a>
+            <a href="../saturn/"><img id="saturnObj" class="saturn" src="../images/Saturn.png" alt="Saturn" title="i guess he liked it?"></a>
+            <a href="../uranus/"><img id="uranusObj" class="uranus" src="../images/Uranus.png" alt="Uranus" title="yours, not mine"></a>
+            <a href="../neptune/"><img id="neptuneObj" class="neptune" src="../images/Neptune.png" alt="Neptune" title="king"></a>
+            <a href="../pluto/"><img id="plutoObj" class="pluto" src="../images/Mercury.png" alt="Pluto" title="itty bitty boi"></a>
+            <a href="../interloper/"><img id="interloperObj" class="mercury" src="../images/Interloper.png" alt="The Interloper" title="Play Outer Wilds!"></a>
+            <script src="sun.js"></script>
     </body>
 </html>
