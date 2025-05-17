@@ -1,12 +1,16 @@
-body {
-    background-image: url("../images/stars.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  h1 {
-    color: #f8bb76;
-  }
-  p {
-    color: #917474;
-  }
+body 
+{
+  background-color: #000000;
+  background-image: url("../images/stars.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 
+{
+  color: #f8bb76;
+}
+p 
+{
+  color: #917474;
+}
