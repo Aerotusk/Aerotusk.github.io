@@ -1,7 +1,7 @@
 const refDate = new Date("2025-01-01")
 // const date = new Date()
 var planets = ["mercury","venus","earth","mars","jupiter","saturn","uranus","neptune","pluto","interloper"]
-var orbitPeriods = [88.0,224.7,365.2,687.0,4331,10747,30589,59800,90560,1/36000]
+var orbitPeriods = [88.0,224.7,365.2,687.0,4331,10747,30589,59800,90560,1/24] //orbital period in days
 // var orbitPeriods = [0.1/36000,0.15/36000,0.2/36000,0.25/36000,0.3/36000,0.35/36000,0.4/36000,0.45/36000,0.5/36000,0.55/36000] // For debugging purposes
 var orbitPositions = [
     48.30+291.95+125.0,
@@ -13,7 +13,7 @@ var orbitPositions = [
     74.0+90.5+250.9,
     131.9+268.1+318.7,
     110.2+113.6+78.0,
-    25]
+    0]
 var orbitRadius = [50,100,150,200,250,300,350,400,450,300]
 
 planetMovement();
@@ -29,10 +29,18 @@ function planetMovement()
         // Set locations of planets
         for (let i=0; i < 10; i++)
         {
-            let orbitTime = (date.getTime() - refDate.getTime()) / (86400000 * orbitPeriods[i]);
-            let xCoord = orbitRadius[i] * Math.sin(orbitPositions[i] + orbitTime * Math.PI / 180) * 1.5;
-            let yCoord = orbitRadius[i] * Math.cos(orbitPositions[i] + orbitTime * Math.PI / 180) / 2;
-            document.getElementById(planets[i]+"Obj").style.transform = 'translate('+ (xCoord-32) + 'px, ' + (yCoord-32) + 'px)';
+            var element = document.getElementById(planets[i]+"Obj");
+            var style = window.getComputedStyle(element);
+            var width = parseInt(style.getPropertyValue('width'),10);
+            var height = parseInt(style.getPropertyValue('height'),10);
+            let timeDiff = (date.getTime() - refDate.getTime())
+            console.log((timeDiff % 86400000) / 86400000)
+            let orbitTime = 360 * ((timeDiff % 86400000) / 86400000) / orbitPeriods[i]; //Number of degrees since Jan 1 2025 (modulo)
+            let xCoord = orbitRadius[i] * Math.sin((orbitPositions[i] + orbitTime) * Math.PI / 180) * 1.5;
+            let yCoord = orbitRadius[i] * Math.cos((orbitPositions[i] + orbitTime) * Math.PI / 180) / 2;
+            xCoord -= width / 2;
+            yCoord -= height / 2;
+            document.getElementById(planets[i]+"Obj").style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
             document.getElementById(planets[i]+"Obj").style.zIndex = Math.round(yCoord+1000);
             // console.log(Math.round(yCoord+1000)) 
         }
