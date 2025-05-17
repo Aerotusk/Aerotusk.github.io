@@ -14,3 +14,8 @@ p
 {
   color: #917474;
 }
+
+img
+{
+  image-rendering: pixelated
+}
