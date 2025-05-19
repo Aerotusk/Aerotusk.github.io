@@ -6,16 +6,16 @@ body
   background-attachment: fixed;
   background-size: cover;
 }
-h1 
+
+.planet
 {
-  color: #f8bb76;
-}
-p 
-{
-  color: #917474;
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index: 0;
 }
 
 img
 {
-  image-rendering: pixelated
+    image-rendering: pixelated
 }

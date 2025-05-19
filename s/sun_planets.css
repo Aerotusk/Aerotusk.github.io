@@ -1,0 +1,80 @@
+.sun
+{
+    width:72px;
+    height:72px;
+    transform:translate(-36px,-36px);
+    z-index: 980;
+}
+
+.sun:hover
+{
+    width:76px;
+    height:76px;
+    transform:translate(-38px,-38px);
+}
+
+.mercury
+{
+    width:40px;
+    height:40px;
+}
+
+/* .mercury:hover
+{
+    width:44px;
+    height:44px;
+} */
+
+.venus
+{
+    width:50px;
+    height:50px;
+}
+
+.earth
+{
+    width:52px;
+    height:52px;
+}
+
+.mars
+{
+    width:45px;
+    height:45px;
+}
+
+.jupiter
+{
+    width:64px;
+    height:64px;
+}
+
+.saturn
+{
+    width:85px;
+    height:40px;
+}
+
+.uranus
+{
+    width:52px;
+    height:52px;
+}
+
+.neptune
+{
+    width:50px;
+    height:50px;
+}
+
+.pluto
+{
+    width:30px;
+    height: 30px;
+}
+
+.interloper
+{
+    width:30px;
+    height: 30px;
+}
