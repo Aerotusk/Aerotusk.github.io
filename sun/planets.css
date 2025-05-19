@@ -9,6 +9,13 @@
     z-index: 980;
 }
 
+.sun:hover
+{
+    width:76px;
+    height:76px;
+    transform:translate(-38px,-38px);
+}
+
 .mercury
 {
     width:40px;
@@ -19,6 +26,13 @@
     z-index: 0;
 }
 
+/* .mercury:hover
+{
+    width:44px;
+    height:44px;
+    transform:translate(-22px,-22px);
+} */
+
 .venus
 {
     width:50px;
@@ -28,6 +42,13 @@
     left:50%;
     z-index: 0;
 }
+
+/* .venus:hover
+{
+    width:54px;
+    height:54px;
+    transform:translate(-27px,-27px);
+} */
 
 .earth
 {
@@ -108,3 +129,10 @@
     left:50%;
     z-index: 0;
 }
+
+/* .interloper:hover
+{
+    width:34px;
+    height:34px;
+    transform:translate(-17px,-17px);
+} */
