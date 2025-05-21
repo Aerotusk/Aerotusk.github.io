@@ -10,6 +10,7 @@ Make ellipses fade out in retrograde direction (dotted line with evenly spaced d
 
 Slightly increase size of planets on hover
     Okay, this is a little bit broken. Doing it in the css :hover pseudoclass makes the planets jitter a tiny bit on hover, likely due to the animation
+    Try making this a js function?
 
 Add some quiet sounds on hover over planets
 
@@ -20,3 +21,7 @@ WHEN am I going to stop focusing on the main screen and start adding content smh
 Find a way to clean up the main page .html source
 
 Make the solar system rotatable
+
+Make Jupiter/Saturn into a project portfolio/ongoing projects repository?
+
+Make js function to animate planet movement on focus
