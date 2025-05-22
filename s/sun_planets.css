@@ -6,13 +6,6 @@
     z-index: 980;
 }
 
-.sun:hover
-{
-    width:76px;
-    height:76px;
-    transform:translate(-38px,-38px);
-}
-
 .mercury
 {
     width:40px;

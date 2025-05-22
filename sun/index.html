@@ -3,7 +3,6 @@
 <html lang="en-us">
     <head>
         <title>Sun - Aerotusk</title>
-        <link rel="stylesheet" href="../s/sun.css">
         <link rel="stylesheet" href="../s/base.css">
         <link rel="stylesheet" href="../s/sun_planets.css">
         <link rel="icon" type="image/gif" href="../images/favicon.png">
@@ -28,7 +27,8 @@
             <ellipse rx="675" ry="225" cx="50%" cy="50%" style="fill:#00000000;stroke:#4da0ff43;stroke-width:3;"/>
             <ellipse rx="750" ry="250" cx="50%" cy="50%" style="fill:#00000000;stroke:#93939355;stroke-width:3;"/>
         </svg>
-        <a href="."><img id="sunObj" class="planet sun" src="../images/Sun.png" alt="The sun" title="Ooooh, ahhhhhh"></a>
+        <script src="planetFocus.js"></script>
+        <button onmouseover="mouseEnterGrow('sun')" onmouseleave="mouseLeaveShrink('sun')" onclick="clickToFocus('sun')"><img id="sunObj" class="planet sun" src="../images/Sun.png" alt="The sun" title="Ooooh, ahhhhhh"></button>
         <a href="../mercury/"><img id="mercuryObj" class="planet mercury" src="../images/Mercury.png" alt="Mercury" title="IT BURNS"></a>
         <a href="../venus/"><img id="venusObj" class="planet venus" src="../images/Venus.png" alt="Venus" title="oh lawdy it's acid rain"></a>
         <a href="../earth/"><img id="earthObj" class="planet earth" src="../images/Earth.png" alt="Earth" title="wow I finally made it"></a>
@@ -39,6 +39,6 @@
         <a href="../neptune/"><img id="neptuneObj" class="planet neptune" src="../images/Neptune.png" alt="Neptune" title="king"></a>
         <a href="../pluto/"><img id="plutoObj" class="planet pluto" src="../images/Mercury.png" alt="Pluto" title="itty bitty boi"></a>
         <a href="../interloper/"><img id="interloperObj" class="planet interloper" src="../images/Interloper.png" alt="The Interloper" title="Play Outer Wilds!"></a>
-        <script src="sun.js"></script>
+        <script src="orbits.js"></script>
     </body>
 </html>
