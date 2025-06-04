@@ -16,7 +16,7 @@ body
 }
 
 .box{ /* Trying to adapt this from xkcd (thanks to Ian Clasbey, davean, and chromakode!)*/
-  background-image: url("..\\images\\checkerBlank.svg");
+  background-image: url("..\\images\\checker.svg");
   border-style:solid;
   border-width:1.5px;
   border-color:#86acbadb;
@@ -31,3 +31,4 @@ img
 {
     image-rendering: pixelated
 }
+
