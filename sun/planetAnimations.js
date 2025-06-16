@@ -56,8 +56,8 @@ function calculateOrbits()
         for (let i=0; i < 10; i++)
         {
             var style = window.getComputedStyle(document.getElementById(planets[i]+"Obj"));
-            var width = parseInt(style.getPropertyValue('width'),10);
-            var height = parseInt(style.getPropertyValue('height'),10);
+            var width = parseFloat(style.getPropertyValue('width'),10);
+            var height = parseFloat(style.getPropertyValue('height'),10);
             let orbitTime = 360 * ((timeDiff) / 86400000) / orbitPeriods[i];
             let xCoord = orbitRadius[i] * Math.cos((orbitPositions[i] - orbitPositions[2] + 90 + orbitTime) * Math.PI / 180) * 1.5; //Make it kinda elliptical
             let yCoord = -orbitRadius[i] * Math.sin((orbitPositions[i] - orbitPositions[2] + 90 + orbitTime) * Math.PI / 180) / 2;
@@ -83,22 +83,23 @@ function planetResize(planet)
 
     var originalWidth = planetDims[ind];
     var originalHeight = planetDims[ind];
-
+    var element = document.getElementById(planet+"Obj");
     function plAnimate()
     {
-        var element = document.getElementById(planet+"Obj");
-        let width = originalWidth * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration / 2)));
-        let height = originalHeight * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration / 2)));
+        if(planetStep[Planets[planet]] != step) // If the animation is still playing:
+        {
+            let width = originalWidth * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration / 2)));
+            let height = originalHeight * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration / 2)));
 
-        let xCoord = planetOrigins[ind][0] - (width / 2);
-        let yCoord = planetOrigins[ind][1] - (height / 2);
+            let xCoord = planetOrigins[ind][0] - (width / 2);
+            let yCoord = planetOrigins[ind][1] - (height / 2);
 
-        document.getElementById(obj).style.width = width + 'px';
-        document.getElementById(obj).style.height = height + 'px';
-        document.getElementById(obj).style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
+            document.getElementById(obj).style.width = width + 'px';
+            document.getElementById(obj).style.height = height + 'px';
+            document.getElementById(obj).style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
+            planetStep[Planets[planet]] = step;
+        }
 
-        planetStep[Planets[planet]] = step;
-        
         if(element.matches(':hover')) // If mouse is still over the planet:
         {
             if(step < animationDuration)
