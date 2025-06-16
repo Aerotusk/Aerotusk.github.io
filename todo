@@ -1,27 +1,16 @@
-Starry background - create one that will tile seamlessly as you scroll down the page, so pages can be as long as desired
-    (why did I just get déjà vu while thinking about how this project will turn out? Is it because it's in HTML?)
-
-Fade-in animation for the planets - will need to learn JavaScript?
+Fade-in animation for the planets
 
 Pull and cache planetary orbit data from Horizons (maybe also add rotation period?)
 
 Make ellipses fade out in retrograde direction (dotted line with evenly spaced dots, each one getting progressively dimmer until a floor value)
     Nevermind on the dots/dashes, they look awful. Still might be able to do the dimming using a bunch of circles, though
 
-Slightly increase size of planets on hover
-    Okay, this is a little bit broken. Doing it in the css :hover pseudoclass makes the planets jitter a tiny bit on hover, likely due to the animation
-    Try making this a js function?
-
 Add some quiet sounds on hover over planets
 
 Add moving shadows to the planets? Somehow idk
 
-WHEN am I going to stop focusing on the main screen and start adding content smh
+Find a way to clean up the main page .html source (even more so, since most of the code is identical for the first planet display)
 
-Find a way to clean up the main page .html source
-
-Make the solar system rotatable
+Make the solar system rotatable (stretch goal)
 
 Make Jupiter/Saturn into a project portfolio/ongoing projects repository?
-
-Make js function to animate planet movement on focus
