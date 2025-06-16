@@ -12,12 +12,6 @@
     height:40px;
 }
 
-/* .mercury:hover
-{
-    width:44px;
-    height:44px;
-} */
-
 .venus
 {
     width:50px;
@@ -45,7 +39,7 @@
 .saturn
 {
     width:85px;
-    height:40px;
+    height:85px;
 }
 
 .uranus
@@ -66,7 +60,7 @@
     height: 30px;
 }
 
-.interloper
+.inter
 {
     width:30px;
     height: 30px;
