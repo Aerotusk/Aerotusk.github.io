@@ -28,3 +28,33 @@ p  /* overrides only */
   background-image: url("..\\images\\plutoChecker.svg");
   border-color:#979797db;
 }
+
+.buttonPanel
+{
+  width:250px;
+  margin: auto;
+}
+
+.navButton
+{
+  background-color: #02ccffa5;
+  color: #bababa;
+  text-align: center;
+  height: 22px;
+}
+
+.navButton:hover
+{
+  background-color: #9debffa5;
+  color: #323232;
+  text-align: center;
+  height: 22px;
+}
+
+#comic
+{
+  width:670px; /*iframe width */
+  margin:auto;
+  margin-top:20.5px;
+  margin-bottom:18px;
+}
