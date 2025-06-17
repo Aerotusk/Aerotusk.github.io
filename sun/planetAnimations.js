@@ -30,8 +30,8 @@ const orbitPositions = [
     131.9+268.1+318.7,
     110.2+113.6+78.0]
 
-const animationDuration = 30;
-const animationShift = 5;
+const animationDuration = 40;
+const animationShift = 10;
 const animationRate = 10;
 const resizeAmount = 0.1;
 
@@ -100,21 +100,14 @@ function planetResize(planet)
             planetStep[Planets[planet]] = step;
         }
 
-        if(element.matches(':hover')) // If mouse is still over the planet:
-        {
-            if(step < animationDuration)
-            {
+        if(element.matches(':hover')){ // If mouse is still over the planet:
+            if(step < animationDuration) {
                 step++;
             }
-        }
-        else
-        {
-            if(step > 0)
-            {
+        } else {
+            if(step > 0) {
                 step--;
-            }
-            else
-            {
+            } else {
                 clearInterval(id);
             }
         }
