@@ -34,6 +34,7 @@ def comicPageGenerator(pages):
             num = int(lines[i]["NUMBER"])
             src = lines[i]['FILENAME']
             date = lines[i]['DATE']
+            altText = lines[i]['TEXT']
 
             indexDir = plutoDir + f"{num}\\"
 
@@ -56,11 +57,11 @@ def comicPageGenerator(pages):
                 # Write to Pluto Directory
                 os.makedirs(os.path.dirname(plutoDir), exist_ok=True)
                 with open(plutoDir + "index.html", mode="w") as index:
-                    index.write(comicFiller(0,f"{title} ({num}) - Aerotusk",f"./{1}/",f"./{num - 1}/",rand,next,last,f"./comics/{src}",title,date))
+                    index.write(comicFiller(0,f"{title} ({num}) - Aerotusk",f"./{1}/",f"./{num - 1}/",rand,next,last,f"./comics/{src}",title,altText,date))
 
             os.makedirs(os.path.dirname(indexDir), exist_ok=True)
             with open(indexDir + "index.html", mode="w") as index:
-                index.write(comicFiller(1,f"{title} ({num}) - Aerotusk",first,prev,rand,next,last,f"../comics/{src}",title,date))
+                index.write(comicFiller(1,f"{title} ({num}) - Aerotusk",first,prev,rand,next,last,f"../comics/{src}",title,altText,date))
 
 if __name__ == "__main__":
     comicPageGenerator(-1)

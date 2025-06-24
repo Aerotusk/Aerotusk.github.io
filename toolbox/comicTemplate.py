@@ -1,4 +1,4 @@
-def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,date):
+def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,date):
     if (dirHeight == 1):
         directory = "../"
     else: # This is the top-level index of pluto. Also need to change src so that it grabs the comic from the correct folder
@@ -38,7 +38,7 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,date):
                     <a rel = "rand" href="{rand}" >     <button class="navButton">Random</button>   </a>
                     <a rel = "next" href="{next}">      <button class="navButton">Next</button>     </a>
                     <a rel = "last" href="{last}">      <button class="navButton">&gt;&gt;</button> </a>
-                    <img id=\"comic\" src=\"{src}\" title=\"{title}\"/>
+                    <img id=\"comic\" src=\"{src}\" alt=\"{title}\" title=\"{altText}\"/>
                     <a rel = "first" href="{first}">    <button class="navButton">&lt;&lt;</button> </a>
                     <a rel = "prev" href="{prev}">      <button class="navButton">Prev</button>     </a>
                     <a rel = "rand" href="{rand}" >     <button class="navButton">Random</button>   </a>
