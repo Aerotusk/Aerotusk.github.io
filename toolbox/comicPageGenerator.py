@@ -1,14 +1,5 @@
 # PURPOSE
 # Take data in csv format and produce all the comic pages in Pluto
-# 
-# CSV FORMAT
-# COMIC NUMBER,COMIC FILENAME (DOUBLES AS TITLE),TRANSCRIPT,TITLE TEXT
-#
-# FUNCTION PARAMETERS
-# LIST of comic pages to rewrite (-1 for all comics, 0 for most recent (such as posting one new comic))
-#
-# FUNCTION RETURNS
-# None
 
 import os
 import csv

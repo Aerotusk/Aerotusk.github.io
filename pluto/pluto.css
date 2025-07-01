@@ -40,7 +40,9 @@ p  /* overrides only */
   background-color: #02ccffa5;
   color: #bababa;
   text-align: center;
-  height: 22px;
+  height: 24px;
+  transform: translate(0,-6px);
+  text-decoration: none;
 }
 
 .navButton:hover
@@ -49,6 +51,12 @@ p  /* overrides only */
   color: #323232;
   text-align: center;
   height: 22px;
+  text-decoration: none;
+}
+
+.buttonLink
+{
+  text-decoration: none;
 }
 
 #comic
