@@ -1,10 +1,45 @@
-h1 {
-  color: #f0e9e1;
+h1  /* overrides only */
+{
+  color: #818181;
 }
-p {
-  color: #aeb095;
+
+h2 /* overrides only */
+{
+  color: #999999;
 }
-div {
-  width:750px;
-  margin:auto;
+h3  /* overrides only */
+{
+  color: #a6a6a6;
+}
+
+h4  /* overrides only */
+{
+  color: #bcbcbc;
+}
+
+p  /* overrides only */
+{
+  color: #c9c9c9;
+}
+
+.box /* overrides only */
+{
+  background-image: url("..\\images\\mercuryChecker.svg");
+  border-color:#979797db;
+}
+
+#planetGrowShrinkDiv
+{
+  position:relative;
+  width: 512px;
+  height: 520px;
+  margin: auto;
+  margin-top:5.5px;
+}
+
+.testPlanet
+{
+    position:absolute;
+    top:0%;
+    left:0%;
 }
