@@ -30,9 +30,9 @@ const orbitPositions = [
     131.9+268.1+318.7,
     110.2+113.6+78.0]
 
-const animationDuration = 40;
-const animationShift = 10;
-const animationRate = 10;
+const animationDuration = 80;
+const animationShift = 74;
+const animationRate = 23;
 const resizeAmount = 0.1;
 
 // GLOBAL VARIABLES
@@ -88,8 +88,8 @@ function planetResize(planet)
     {
         if(planetStep[Planets[planet]] != step) // If the animation is still playing:
         {
-            let width = originalWidth * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration / 2)));
-            let height = originalHeight * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration / 2)));
+            let width = originalWidth * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration)));
+            let height = originalHeight * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration)));
 
             let xCoord = planetOrigins[ind][0] - (width / 2);
             let yCoord = planetOrigins[ind][1] - (height / 2);
@@ -101,7 +101,7 @@ function planetResize(planet)
         }
 
         if(element.matches(':hover')){ // If mouse is still over the planet:
-            if(step < animationDuration) {
+            if(step < (animationDuration * 2) - animationShift - 55) {
                 step++;
             }
         } else {
