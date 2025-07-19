@@ -14,7 +14,7 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,
         <link rel="stylesheet" href="{directory}../s/feed.css">
         <link rel="stylesheet" href="{directory}../s/navbar.css">
         <link rel="stylesheet" href="{directory}pluto.css">
-        <link rel="icon" type="image" href="{directory}../images/Mercury.png">
+        <link rel="icon" type="image" href="{directory}../images/Pluto.png">
     </head>
 
     <body>
@@ -25,7 +25,7 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,
                 <h2><em>???</em></h2>
             </div>
             <div id="headerRight">
-                <a href="."><img id="planet" src="{directory}../images/Mercury.png" alt="Mercury" title="itty bitty boy"></a>
+                <a href="."><img id="planet" src="{directory}../images/Pluto.png" alt="Pluto" title="itty bitty boy"></a>
             </div>
         </div>
 
@@ -40,7 +40,7 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,
             <a onmouseenter="planetResize('saturn')"  href="{directory}../saturn/">  <img id="saturnObj"  class="planet saturn"   src="{directory}../images/Saturn.png"  alt="Saturn"        title="i guess he liked it?"></a>
             <a onmouseenter="planetResize('uranus')"  href="{directory}../uranus/">  <img id="uranusObj"  class="planet uranus"   src="{directory}../images/Uranus.png"  alt="Uranus"        title="yours, not mine"></a>
             <a onmouseenter="planetResize('neptune')" href="{directory}../neptune/"> <img id="neptuneObj" class="planet neptune"  src="{directory}../images/Neptune.png" alt="Neptune"       title="king"></a>
-            <a onmouseenter="planetResize('pluto')"   href="{directory}../pluto/">   <img id="plutoObj"   class="planet pluto"    src="{directory}../images/Mercury.png" alt="Pluto"         title="itty bitty boi"></a>
+            <a onmouseenter="planetResize('pluto')"   href="{directory}../pluto/">   <img id="plutoObj"   class="planet pluto"    src="{directory}../images/Pluto.png"   alt="Pluto"         title="itty bitty boi"></a>
             <a onmouseenter="planetResize('inter')"   href="{directory}../inter/">   <img id="interObj"   class="planet inter"    src="{directory}../images/Inter.png"   alt="The Interloper"title="Play Outer Wilds!"></a>
         </div>
         
