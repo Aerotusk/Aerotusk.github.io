@@ -1,0 +1,112 @@
+#navbar
+{
+  width:744px;
+  height:72px;
+  position:relative;
+  overflow:hidden;
+  margin:auto;
+  padding:0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.sun
+{
+    width:72px;
+    height:72px;
+    transform:translate(-36px,-36px);
+    left:34px;
+    top:50%;
+}
+
+.mercury
+{
+    width:40px;
+    height:40px;
+    transform:translate(-20px,-20px);
+    left:111px;
+    top:50%;
+}
+
+.venus
+{
+    width:50px;
+    height:50px;
+    transform:translate(-25px,-25px);
+    left:177px;
+    top:50%;
+}
+
+.earth
+{
+    width:52px;
+    height:52px;
+    transform:translate(-26px,-26px);
+    left:249px;
+    top:50%;
+}
+
+.mars
+{
+    width:45px;
+    height:45px;
+    transform:translate(-22.5px,-22.5px);
+    left:318.5px;
+    top:50%;
+}
+
+.jupiter
+{
+    width:64px;
+    height:64px;
+    transform:translate(-32px,-32px);
+    left:394px;
+    top:50%;
+}
+
+.saturn
+{
+    width:85px;
+    height:85px;
+    transform:translate(-42.5px,-42.5px);
+    left:480px;
+    top:50%;
+}
+
+.uranus
+{
+    width:52px;
+    height:52px;
+    transform:translate(-26px,-26px);
+    left:558px;
+    top:50%;
+}
+
+.neptune
+{
+    width:50px;
+    height:50px;
+    transform:translate(-25px,-25px);
+    left:630px;
+    top:50%;
+}
+
+.pluto
+{
+    width:30px;
+    height:30px;
+    transform:translate(-15px,-15px);
+    left:691px;
+    top:50%;
+}
+
+.inter
+{
+    width:30px;
+    height: 30px;
+    transform:translate(-15px,-15px);
+    left:740px;
+    top:50%;
+}

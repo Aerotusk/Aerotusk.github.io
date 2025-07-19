@@ -42,6 +42,7 @@ h3
 h4 
 {
   color: #ff0000;
+
   font-family:Helvetica,Arial;
   font-size:24px;
   margin-top:23px;
@@ -55,20 +56,9 @@ h4
 p 
 {
   color: #ff0000;
+
   font-family:Helvetica,Arial;
   border:none;
-}
-
-.box{ /* Override background image and border color in page-specific css */
-  background-image: url("..\\images\\checker.svg");
-  border-color:#86acbadb;
-  -moz-border-radius: 12px;
-  border-style:solid;
-  border-radius: 12px;
-  border-width:1.5px;
-  margin-bottom: 12px;
-  padding-right: 12px;
-  padding-left: 12px;
 }
 
 div 
@@ -91,6 +81,19 @@ iframe
   border-radius: 12px;
 }
 
+.box{ /* Override background image and border color in page-specific css */
+  background-image: url("..\\images\\checker.svg");
+  border-color:#86acbadb;
+
+  -moz-border-radius: 12px;
+  border-style:solid;
+  border-radius: 12px;
+  border-width:1.5px;
+  margin-bottom: 21px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
 .bodyText
 {
   width:670px; /*iframe width */
@@ -101,6 +104,7 @@ iframe
   margin-bottom:19.5px;
   line-height:1.333333333;
 }
+
 
 #headerBox
 {
@@ -132,6 +136,59 @@ iframe
   line-height: 150%;
 }
 
+#footerBox
+{
+  width:771px;
+  position:relative;
+  overflow:hidden;
+  margin:auto;
+  padding:0px;
+  border-style:solid;
+  border-radius: 12px;
+  border-width:0px;
+  border-color:#ba8686db;
+}
+
+#footerLeft
+{
+  background-image: url("..\\images\\checker.svg");
+  border-color:#86acbadb;
+
+  -moz-border-radius: 12px;
+  border-style:solid;
+  border-radius: 12px;
+  border-width:1.5px;
+  width:552px;
+  height:120px;
+  float:left;
+  position:relative;
+  text-align:left;
+  list-style-type: none;
+
+  margin:0px;
+  padding:0px;
+}
+
+#footerRight
+{
+  background-image: url("..\\images\\checker.svg");
+  border-color:#86acbadb;
+
+  -moz-border-radius: 12px;
+  border-style:solid;
+  border-radius: 12px;
+  border-width:1.5px;
+  width:192px;
+  height:120px;
+  float:right;
+  position:relative;
+  text-align:right;
+  line-height: 150%;
+
+  margin:0px;
+  padding:0px;
+}
+
 #planet
 {
   height:102px;
@@ -140,10 +197,12 @@ iframe
   margin:auto;
 }
 
-
-#footerBox
+#returnToSun
 {
-  width:780px;
-  position:relative;
-  overflow:hidden;
+  position:absolute;
+  top:50%;
+  left:50%;
+  height:102px;
+  width:102px;
+  transform: translate(-51px,-51px);
 }
