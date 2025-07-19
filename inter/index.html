@@ -5,20 +5,44 @@
         <title>Interloper - Aerotusk</title>
         <link rel="stylesheet" href="../s/base.css">
         <link rel="stylesheet" href="../s/feed.css">
+        <link rel="stylesheet" href="../s/navbar.css">
         <link rel="stylesheet" href="inter.css">
         <link rel="icon" type="image" href="../images/Inter.png">
     </head>
     <body>
         <div id="headerBox">
             <div id="headerLeft">
-                <h1 ><em>The Interloper</em></h1>
+                <h1><em>The Interloper</em></h1>
                 <h2><em>Your source for all Aerotusk news</em></h2>
             </div>
             <div id="headerRight">
                 <a href="."><img id="planet" src="../images/Inter.png" alt="The Interloper" title="Play Outer Wilds!"></a>
             </div>
         </div>
+
+        <div id="navbar">
+            <script src="../sun/planetAnimations.js"></script>
+            <a onmouseenter="planetResize('sun')"     href=".">           <img id="sunObj"     class="planet sun"      src="../images/Sun.png"     alt="The Sun"       title="Ooooh, ahhhhhh"></a>
+            <a onmouseenter="planetResize('mercury')" href="../mercury/"> <img id="mercuryObj" class="planet mercury"  src="../images/Mercury.png" alt="Mercury"       title="IT BURNS"></a>
+            <a onmouseenter="planetResize('venus')"   href="../venus/">   <img id="venusObj"   class="planet venus"    src="../images/Venus.png"   alt="Venus"         title="oh lawdy it's acid rain"></a>
+            <a onmouseenter="planetResize('earth')"   href="../earth/">   <img id="earthObj"   class="planet earth"    src="../images/Earth.png"   alt="Earth"         title="wow I finally made it"></a>
+            <a onmouseenter="planetResize('mars')"    href="../mars/">    <img id="marsObj"    class="planet mars"     src="../images/Mars.png"    alt="Mars"          title="space piracy is against the united nations code of conduct"></a>
+            <a onmouseenter="planetResize('jupiter')" href="../jupiter/"> <img id="jupiterObj" class="planet jupiter"  src="../images/Jupiter.png" alt="Jupiter"       title="Big boi!"></a>
+            <a onmouseenter="planetResize('saturn')"  href="../saturn/">  <img id="saturnObj"  class="planet saturn"   src="../images/Saturn.png"  alt="Saturn"        title="i guess he liked it?"></a>
+            <a onmouseenter="planetResize('uranus')"  href="../uranus/">  <img id="uranusObj"  class="planet uranus"   src="../images/Uranus.png"  alt="Uranus"        title="yours, not mine"></a>
+            <a onmouseenter="planetResize('neptune')" href="../neptune/"> <img id="neptuneObj" class="planet neptune"  src="../images/Neptune.png" alt="Neptune"       title="king"></a>
+            <a onmouseenter="planetResize('pluto')"   href="../pluto/">   <img id="plutoObj"   class="planet pluto"    src="../images/Mercury.png" alt="Pluto"         title="itty bitty boi"></a>
+            <a onmouseenter="planetResize('inter')"   href="../inter/">   <img id="interObj"   class="planet inter"    src="../images/Inter.png"   alt="The Interloper"title="Play Outer Wilds!"></a>
+        </div>
         
+        <div class="box">
+            <h2>Mercury has been Updated!</h2>
+            <h4>18 July, 2025</h4>
+            <p class="bodyText">
+                <a href="../mercury/" style="color:#c2c3b0">Mercury</a> is now a page for testing various new site mechanics. The first post is about main page planet hover delay and speed; try it out now!
+            </p>
+        </div>
+
         <div class="box">
             <h2>New Video Posted!</h2>
             <h4>30 May, 2025</h4>
@@ -79,6 +103,19 @@
                 Ut hendrerit semper vel class aptent taciti sociosqu. 
                 Ad litora torquent per conubia nostra inceptos himenaeos.
             </p>
+        </div>
+
+        <div id="footerBox">
+            <!-- Ooh, the footer box should actually just have all the planets in a row for easy navigation (or should that be on the header?7) -->
+            <div id="footerLeft">
+                <!-- Want to have some sort of link tab here -->
+                <a href="."><img src="../images/Mercury.png" alt="Mercury" title="IT BURNS" style="width:32;height:32px;"></a>
+                <a href="https://www.youtube.com/@Aerotusk"><img src="../images/youtube.svg" alt="Aerotusk - YouTube" title="Aerotusk - YouTube"></a>
+            </div>
+            <div id="footerRight">
+                <!-- Area for returning to the Sun -->
+                <a href="../sun/"><img id="returnToSun" src="../images/Sun.png" alt="Return to the Sun" title="Return to the Sun"></a>
+            </div>
         </div>
     </body>
 </html>

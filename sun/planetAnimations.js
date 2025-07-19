@@ -40,7 +40,7 @@ var planetOrigins = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]
 var planetStep = [0,0,0,0,0,0,0,0,0,0,0]
 
 // MAIN CODE
-calculateOrbits();
+// calculateOrbits();
 
 // FUNCTION DEFINITIONS
 function calculateOrbits()

@@ -28,3 +28,20 @@ p /* overrides only */
   background-image: url("..\\images\\interChecker.svg");
   border-color:#86acbadb;
 }
+
+.planet
+{
+  position:absolute;
+}
+
+#footerRight /* overrides only */
+{
+  background-image: url("..\\images\\interChecker.svg");
+  border-color:#86acbadb;
+}
+
+#footerLeft /* overrides only */
+{
+  background-image: url("..\\images\\interChecker.svg");
+  border-color:#86acbadb;
+}
