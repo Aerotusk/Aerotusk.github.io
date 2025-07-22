@@ -1,32 +1,32 @@
 
 h1  /* overrides only */
 {
-  color: #818181;
+  color: #e0c38b;
 }
 
 h2 /* overrides only */
 {
-  color: #999999;
+  color: #c6a981;
 }
 h3  /* overrides only */
 {
-  color: #a6a6a6;
+  color: #c6a981;
 }
 
 h4  /* overrides only */
 {
-  color: #bcbcbc;
+  color: #c39f78;
 }
 
 p  /* overrides only */
 {
-  color: #c9c9c9;
+  color: #c39f78;
 }
 
 .box /* overrides only */
 {
   background-image: url("..\\images\\plutoChecker.svg");
-  border-color:#979797db;
+  border-color:#a77d63db;
 }
 
 .buttonPanel
@@ -37,7 +37,7 @@ p  /* overrides only */
 
 .navButton
 {
-  background-color: #02ccffa5;
+  background-color: #a77d63a5;
   color: #bababa;
   text-align: center;
   height: 24px;
@@ -47,7 +47,7 @@ p  /* overrides only */
 
 .navButton:hover
 {
-  background-color: #9debffa5;
+  background-color: #be9b85a5;
   color: #323232;
   text-align: center;
   height: 22px;
