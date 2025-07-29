@@ -14,3 +14,5 @@ Find a way to clean up the main page .html source (even more so, since most of t
 Make the solar system rotatable (stretch goal)
 
 Make Jupiter/Saturn into a project portfolio/ongoing projects repository?
+
+Change up the CSS so that objects are referenced by ID more often than class. Specifically, do something likle #nav_sun instead of just .sun in the navbar file
