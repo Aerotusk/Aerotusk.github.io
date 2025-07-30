@@ -1,0 +1,52 @@
+// This file should ONLY include items relevant planetResize and helper functions
+
+const animationDuration = 80;
+const animationShift = 74;
+const animationRate = 23;
+const resizeAmount = 0.1;
+
+function planetResize(planet)
+{
+    let obj = planet.pName;
+    let step = planet.step;
+    var dim = planet.dims;
+    var element = document.getElementById(obj);
+    
+    let id = null;
+    clearInterval(id);
+    id = setInterval(plAnimate,15); // Frame period, in ms
+    
+    function plAnimate()
+    {
+        if(planet.step != step) // If the animation is still playing:
+        {
+            let size = dim * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration)));
+
+            let xCoord = planet.org[0] - (size / 2);
+            let yCoord = planet.org[1] - (size / 2);
+
+            document.getElementById(obj).style.width = size + 'px';
+            document.getElementById(obj).style.height = size + 'px';
+            document.getElementById(obj).style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
+            planet.step = step;
+        }
+
+        if(element.matches(':hover')){ // If mouse is still over the planet:
+            if(step < (animationDuration * 2) - animationShift - 55) {
+                step++;
+            }
+        } else {
+            if(step > 0) {
+                step--;
+            } else {
+                clearInterval(id);
+            }
+        }
+    }
+}
+
+// HELPER FUNCTIONS
+function logistic(time,rate,dur)
+{
+    return 1 / (1 + Math.exp(-rate * ((time/dur)-1)))
+}
