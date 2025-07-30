@@ -116,9 +116,27 @@ def horizonsGetEphemeris(planetID:str,time:date): # Lots of this grabbed from Py
         sys.exit(2)
     return resp.text
 
+
+def writeEphemerisFile(filename:str,refDate:date,planets:list[PlanetarySystem]):
+    planetStrings = []
+    dateString = f"const refDate = new Date('{refDate.isoformat()}')\n"
+    for i in planets:
+        name = i.name
+        period = i.orbit.OrbitalPeriod / 86400 # Orbital Period, days
+        pos = i.orbit.LongitudeAscendingNode + i.orbit.ArgumentOfPeriapsis + i.orbit.TrueAnomaly
+        radius = 0
+        dims = 0
+        ind = i.id
+        planetStrings.append(f"{name} = new Planet('{name}',{period:.5f},{pos:.5f},{radius},{dims},{ind});\n")
+    with open(filename,"w") as f:
+        f.writelines(dateString)
+        f.writelines(planetStrings)
+    
+
 if __name__ == "__main__":
-    time=date.today()
+    refDate=date.today()
     planetID = 3
-    eph = EphemerisData(horizonsGetEphemeris(planetID,time))
-    Earth = PlanetarySystem("Earth",planetID,eph,time)
+    eph = EphemerisData(horizonsGetEphemeris(planetID,refDate))
+    Earth = PlanetarySystem("Earth",planetID,eph,refDate)
     print(eph)
+    writeEphemerisFile("ephemeris.js",refDate,Earth)

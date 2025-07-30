@@ -4,9 +4,10 @@
 
     <head>
         <title>test4 (4) - Aerotusk</title>
-        <link rel="stylesheet" href="../../s/base.css">
-        <link rel="stylesheet" href="../../s/feed.css">
-        <link rel="stylesheet" href="../../s/navbar.css">
+        <link rel="stylesheet" href="../../css/base.css">
+        <link rel="stylesheet" href="../../css/feed.css">
+        <link rel="stylesheet" href="../../css/planet_size.css">
+        <link rel="stylesheet" href="../../css/navbar.css">
         <link rel="stylesheet" href="../pluto.css">
         <link rel="icon" type="image" href="../../images/Pluto.png">
     </head>
@@ -24,18 +25,19 @@
         </div>
 
         <div id="navbar">
-            <script src="../sun/planetAnimations.js"></script>
-            <a onmouseenter="planetResize('sun')"     href="../../sun/">     <img id="sunObj"     class="planet sun"      src="../../images/Sun.png"     alt="The Sun"       title="Ooooh, ahhhhhh"></a>
-            <a onmouseenter="planetResize('mercury')" href="../../mercury/"> <img id="mercuryObj" class="planet mercury"  src="../../images/Mercury.png" alt="Mercury"       title="IT BURNS"></a>
-            <a onmouseenter="planetResize('venus')"   href="../../venus/">   <img id="venusObj"   class="planet venus"    src="../../images/Venus.png"   alt="Venus"         title="oh lawdy it's acid rain"></a>
-            <a onmouseenter="planetResize('earth')"   href="../../earth/">   <img id="earthObj"   class="planet earth"    src="../../images/Earth.png"   alt="Earth"         title="wow I finally made it"></a>
-            <a onmouseenter="planetResize('mars')"    href="../../mars/">    <img id="marsObj"    class="planet mars"     src="../../images/Mars.png"    alt="Mars"          title="space piracy is against the united nations code of conduct"></a>
-            <a onmouseenter="planetResize('jupiter')" href="../../jupiter/"> <img id="jupiterObj" class="planet jupiter"  src="../../images/Jupiter.png" alt="Jupiter"       title="Big boi!"></a>
-            <a onmouseenter="planetResize('saturn')"  href="../../saturn/">  <img id="saturnObj"  class="planet saturn"   src="../../images/Saturn.png"  alt="Saturn"        title="i guess he liked it?"></a>
-            <a onmouseenter="planetResize('uranus')"  href="../../uranus/">  <img id="uranusObj"  class="planet uranus"   src="../../images/Uranus.png"  alt="Uranus"        title="yours, not mine"></a>
-            <a onmouseenter="planetResize('neptune')" href="../../neptune/"> <img id="neptuneObj" class="planet neptune"  src="../../images/Neptune.png" alt="Neptune"       title="king"></a>
-            <a onmouseenter="planetResize('pluto')"   href="../../pluto/">   <img id="plutoObj"   class="planet pluto"    src="../../images/Pluto.png"   alt="Pluto"         title="itty bitty boi"></a>
-            <a onmouseenter="planetResize('inter')"   href="../../inter/">   <img id="interObj"   class="planet inter"    src="../../images/Inter.png"   alt="The Interloper"title="Play Outer Wilds!"></a>
+            <script src="../../scripts/planetData.js"></script>
+            <script src="../../scripts/planetResize.js"></script>
+            <a onmouseenter="planetResize(Sun)"     href="../../sun/">     <img id="sun"     src="../../images/Sun.png"     alt="The Sun"       title="Ooooh, ahhhhhh"></a>
+            <a onmouseenter="planetResize(Mercury)" href="../../mercury/"> <img id="mercury" src="../../images/Mercury.png" alt="Mercury"       title="IT BURNS"></a>
+            <a onmouseenter="planetResize(Venus)"   href="../../venus/">   <img id="venus"   src="../../images/Venus.png"   alt="Venus"         title="oh lawdy it's acid rain"></a>
+            <a onmouseenter="planetResize(Earth)"   href="../../earth/">   <img id="earth"   src="../../images/Earth.png"   alt="Earth"         title="wow I finally made it"></a>
+            <a onmouseenter="planetResize(Mars)"    href="../../mars/">    <img id="mars"    src="../../images/Mars.png"    alt="Mars"          title="space piracy is against the united nations code of conduct"></a>
+            <a onmouseenter="planetResize(Inter)"   href="../../inter/">   <img id="inter"   src="../../images/Inter.png"   alt="The Interloper"title="Play Outer Wilds!"></a>
+            <a onmouseenter="planetResize(Jupiter)" href="../../jupiter/"> <img id="jupiter" src="../../images/Jupiter.png" alt="Jupiter"       title="Big boi!"></a>
+            <a onmouseenter="planetResize(Saturn)"  href="../../saturn/">  <img id="saturn"  src="../../images/Saturn.png"  alt="Saturn"        title="i guess he liked it?"></a>
+            <a onmouseenter="planetResize(Uranus)"  href="../../uranus/">  <img id="uranus"  src="../../images/Uranus.png"  alt="Uranus"        title="yours, not mine"></a>
+            <a onmouseenter="planetResize(Neptune)" href="../../neptune/"> <img id="neptune" src="../../images/Neptune.png" alt="Neptune"       title="king"></a>
+            <a onmouseenter="planetResize(Pluto)"   href="../../pluto/">   <img id="pluto"   src="../../images/Pluto.png"   alt="Pluto"         title="itty bitty boi"></a>
         </div>
         
         <div class="box" style="text-align: center;">

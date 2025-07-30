@@ -1,5 +1,6 @@
 // CONSTANTS
 const planets = ["mercury","venus","earth","mars","inter","jupiter","saturn","uranus","neptune","pluto","sun"]
+
 const orbitPeriods = [88.0,224.7,365.2,687.0,1/24,4331,10747,30589,59800,90560] //orbital period in days
 // const orbitPeriods = [0.1/36000,0.15/36000,0.2/36000,0.25/36000,0.3/36000,0.35/36000,0.4/36000,0.45/36000,0.5/36000,0.55/36000] // For debugging purposes\\
 const orbitRadius = [50,100,150,200,250,300,350,400,450,500]
@@ -39,8 +40,6 @@ const resizeAmount = 0.1;
 var planetOrigins = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]
 var planetStep = [0,0,0,0,0,0,0,0,0,0,0]
 
-// MAIN CODE
-// calculateOrbits();
 
 // FUNCTION DEFINITIONS
 function calculateOrbits()
@@ -56,17 +55,17 @@ function calculateOrbits()
         for (let i=0; i < 10; i++)
         {
             var style = window.getComputedStyle(document.getElementById(planets[i]+"Obj"));
-            var width = parseFloat(style.getPropertyValue('width'),10);
-            var height = parseFloat(style.getPropertyValue('height'),10);
+            var size = parseFloat(style.getPropertyValue('width'),10); //width and height are equal for all planets
             let orbitTime = 360 * ((timeDiff) / 86400000) / orbitPeriods[i];
             let xCoord = orbitRadius[i] * Math.cos((orbitPositions[i] - orbitPositions[2] + 90 + orbitTime) * Math.PI / 180) * 1.5; //Make it kinda elliptical
             let yCoord = -orbitRadius[i] * Math.sin((orbitPositions[i] - orbitPositions[2] + 90 + orbitTime) * Math.PI / 180) / 2;
 
             planetOrigins[i] = [xCoord,yCoord];
-            xCoord -= width / 2;
-            yCoord -= height / 2;
+            xCoord -= size / 2;
+            yCoord -= size / 2;
+
             document.getElementById(planets[i]+"Obj").style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
-            document.getElementById(planets[i]+"Obj").style.zIndex = Math.round(yCoord+1000); // Set draw order of planets
+            document.getElementById(planets[i]+"Obj").style.zIndex = Math.round(yCoord+1000); // Sets draw order of planets
         }
     }
 }
