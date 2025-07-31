@@ -117,26 +117,57 @@ def horizonsGetEphemeris(planetID:str,time:date): # Lots of this grabbed from Py
     return resp.text
 
 
-def writeEphemerisFile(filename:str,refDate:date,planets:list[PlanetarySystem]):
-    planetStrings = []
+def writeEphemerisFile(filename:str,refDate:date,periods:list,positions:list,radii:list):
     dateString = f"const refDate = new Date('{refDate.isoformat()}')\n"
-    for i in planets:
-        name = i.name
-        period = i.orbit.OrbitalPeriod / 86400 # Orbital Period, days
-        pos = i.orbit.LongitudeAscendingNode + i.orbit.ArgumentOfPeriapsis + i.orbit.TrueAnomaly
-        radius = 0
-        dims = 0
-        ind = i.id
-        planetStrings.append(f"{name} = new Planet('{name}',{period:.5f},{pos:.5f},{radius},{dims},{ind});\n")
+    radString = "const orbitRadius = [0,50,100,150,200,250,300,350,400,450,500]\n"
+    periodStrings = "const orbitPeriods = ["
+    for i in periods:
+        periodStrings += f"{i/86400:.3f},"
+    periodStrings += "] //orbital period in days\n"
+
+    positionStrings = "const orbitPositions = ["
+    for i in positions:
+        positionStrings += f"{i[0]:.3f} + {i[1]:.3f} + {i[2]:.3f},\n"
+    positionStrings += "]\n"
+
+    suffix = """
+for (i = 1; i < planetList.length; i++)
+{
+    planetList[i].rad = orbitRadius[i];
+    planetList[i].per = orbitPeriods[i];
+    planetList[i].pos = orbitPositions[i];
+}"""
+
     with open(filename,"w") as f:
         f.writelines(dateString)
-        f.writelines(planetStrings)
+        f.writelines(radString)
+        f.writelines(periodStrings)
+        f.writelines(positionStrings)
+        f.writelines(suffix)
     
-
 if __name__ == "__main__":
+
+    planetarySystems = []
+    planets = ["Sun","Mercury","Venus","Earth","Mars","Inter","Jupiter","Saturn","Uranus","Neptune","Pluto"]
+    planetIds = [0,1,2,3,4,0,5,6,7,8,9]
     refDate=date.today()
-    planetID = 3
-    eph = EphemerisData(horizonsGetEphemeris(planetID,refDate))
-    Earth = PlanetarySystem("Earth",planetID,eph,refDate)
-    print(eph)
-    writeEphemerisFile("ephemeris.js",refDate,Earth)
+    for i in range(len(planets)):
+        if(planetIds[i] != 0):
+            # Actually get ephemeris data
+            eph = EphemerisData(horizonsGetEphemeris(planetIds[i],refDate))
+        
+        else:
+            # Skip getting ephemeris data
+            eph = EphemerisData([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,1/24]])
+            pass
+        planetarySystems.append(PlanetarySystem("Earth",planetIds[i],eph,refDate))
+
+    orbitPeriods = []
+    orbitPositions = []
+    orbitRadii = [0,50,100,150,200,250,300,350,400,450,500]
+    for i in planetarySystems:
+        period = i.orbit.OrbitalPeriod
+        elements = [i.orbit.LongitudeAscendingNode,i.orbit.ArgumentOfPeriapsis,i.orbit.TrueAnomaly]
+        orbitPeriods.append(period)
+        orbitPositions.append(elements)
+    writeEphemerisFile("toolbox/ephemeris.js",refDate,orbitPeriods,orbitPositions,orbitRadii)
