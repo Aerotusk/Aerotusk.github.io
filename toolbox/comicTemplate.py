@@ -15,7 +15,7 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,
         <link rel="stylesheet" href="{directory}../css/planet_size.css">
         <link rel="stylesheet" href="{directory}../css/navbar.css">
         <link rel="stylesheet" href="{directory}pluto.css">
-        <link rel="icon" type="image" href="{directory}../images/Pluto.png">
+        <link rel="icon" type="image" href="{directory}../images/planets/Pluto.png">
     </head>
 
     <body>
@@ -26,24 +26,24 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,
                 <h2><em>???</em></h2>
             </div>
             <div id="headerRight">
-                <a href="."><img id="planet" src="{directory}../images/Pluto.png" alt="Pluto" title="itty bitty boy"></a>
+                <a href="."><img id="planet" src="{directory}../images/planets/Pluto.png" alt="Pluto" title="itty bitty boy"></a>
             </div>
         </div>
 
         <div id="navbar">
             <script src="{directory}../scripts/planetData.js"></script>
             <script src="{directory}../scripts/planetResize.js"></script>
-            <a onmouseenter="planetResize(Sun)"     href="{directory}../sun/">     <img id="sun"     src="{directory}../images/Sun.png"     alt="The Sun"       title="Ooooh, ahhhhhh"></a>
-            <a onmouseenter="planetResize(Mercury)" href="{directory}../mercury/"> <img id="mercury" src="{directory}../images/Mercury.png" alt="Mercury"       title="IT BURNS"></a>
-            <a onmouseenter="planetResize(Venus)"   href="{directory}../venus/">   <img id="venus"   src="{directory}../images/Venus.png"   alt="Venus"         title="oh lawdy it's acid rain"></a>
-            <a onmouseenter="planetResize(Earth)"   href="{directory}../earth/">   <img id="earth"   src="{directory}../images/Earth.png"   alt="Earth"         title="wow I finally made it"></a>
-            <a onmouseenter="planetResize(Mars)"    href="{directory}../mars/">    <img id="mars"    src="{directory}../images/Mars.png"    alt="Mars"          title="space piracy is against the united nations code of conduct"></a>
-            <a onmouseenter="planetResize(Inter)"   href="{directory}../inter/">   <img id="inter"   src="{directory}../images/Inter.png"   alt="The Interloper"title="Play Outer Wilds!"></a>
-            <a onmouseenter="planetResize(Jupiter)" href="{directory}../jupiter/"> <img id="jupiter" src="{directory}../images/Jupiter.png" alt="Jupiter"       title="Big boi!"></a>
-            <a onmouseenter="planetResize(Saturn)"  href="{directory}../saturn/">  <img id="saturn"  src="{directory}../images/Saturn.png"  alt="Saturn"        title="i guess he liked it?"></a>
-            <a onmouseenter="planetResize(Uranus)"  href="{directory}../uranus/">  <img id="uranus"  src="{directory}../images/Uranus.png"  alt="Uranus"        title="yours, not mine"></a>
-            <a onmouseenter="planetResize(Neptune)" href="{directory}../neptune/"> <img id="neptune" src="{directory}../images/Neptune.png" alt="Neptune"       title="king"></a>
-            <a onmouseenter="planetResize(Pluto)"   href="{directory}../pluto/">   <img id="pluto"   src="{directory}../images/Pluto.png"   alt="Pluto"         title="itty bitty boi"></a>
+            <a onmouseenter="planetResize(Sun)"     href="{directory}../sun/">     <img id="sun"     src="{directory}../images/planets/Sun.png"     alt="The Sun"       title="Ooooh, ahhhhhh"></a>
+            <a onmouseenter="planetResize(Mercury)" href="{directory}../mercury/"> <img id="mercury" src="{directory}../images/planets/Mercury.png" alt="Mercury"       title="IT BURNS"></a>
+            <a onmouseenter="planetResize(Venus)"   href="{directory}../venus/">   <img id="venus"   src="{directory}../images/planets/Venus.png"   alt="Venus"         title="oh lawdy it's acid rain"></a>
+            <a onmouseenter="planetResize(Earth)"   href="{directory}../earth/">   <img id="earth"   src="{directory}../images/planets/Earth.png"   alt="Earth"         title="wow I finally made it"></a>
+            <a onmouseenter="planetResize(Mars)"    href="{directory}../mars/">    <img id="mars"    src="{directory}../images/planets/Mars.png"    alt="Mars"          title="space piracy is against the united nations code of conduct"></a>
+            <a onmouseenter="planetResize(Inter)"   href="{directory}../inter/">   <img id="inter"   src="{directory}../images/planets/Inter.png"   alt="The Interloper"title="Play Outer Wilds!"></a>
+            <a onmouseenter="planetResize(Jupiter)" href="{directory}../jupiter/"> <img id="jupiter" src="{directory}../images/planets/Jupiter.png" alt="Jupiter"       title="Big boi!"></a>
+            <a onmouseenter="planetResize(Saturn)"  href="{directory}../saturn/">  <img id="saturn"  src="{directory}../images/planets/Saturn.png"  alt="Saturn"        title="i guess he liked it?"></a>
+            <a onmouseenter="planetResize(Uranus)"  href="{directory}../uranus/">  <img id="uranus"  src="{directory}../images/planets/Uranus.png"  alt="Uranus"        title="yours, not mine"></a>
+            <a onmouseenter="planetResize(Neptune)" href="{directory}../neptune/"> <img id="neptune" src="{directory}../images/planets/Neptune.png" alt="Neptune"       title="king"></a>
+            <a onmouseenter="planetResize(Pluto)"   href="{directory}../pluto/">   <img id="pluto"   src="{directory}../images/planets/Pluto.png"   alt="Pluto"         title="itty bitty boi"></a>
         </div>
         
         <div class="box" style="text-align: center;">
@@ -70,9 +70,9 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,
                 <a href="#" style="text-decoration: none;color:inherit;opacity:50%;"><em>To The Top</em></a>
             </h2>
             <div style="margin-top: 12px;">
-                <a href="https://www.youtube.com/@Aerotusk"><img class="icon" style="width:46.6px;" src="{directory}../images/youtube.svg" alt="Aerotusk - YouTube" title="Aerotusk - YouTube"></a>
-                <a href="https://www.twitch.tv/aerotusk"><img class="icon" src="{directory}../images/glitch_flat_ice.svg" alt="Aerotusk - Twitch" title="Aerotusk - Twitch"></a>
-                <a href="https://www.instagram.com/aerotusk_/"><img class="icon" src="{directory}../images/Instagram_Glyph_White.svg" alt="Aerotusk - Instagram" title="Aerotusk - Instagram"></a>
+                <a href="https://www.youtube.com/@Aerotusk"><img class="icon" style="width:46.6px;" src="{directory}../images/logos/youtube.svg" alt="Aerotusk - YouTube" title="Aerotusk - YouTube"></a>
+                <a href="https://www.twitch.tv/aerotusk"><img class="icon" src="{directory}../images/logos/glitch_flat_ice.svg" alt="Aerotusk - Twitch" title="Aerotusk - Twitch"></a>
+                <a href="https://www.instagram.com/aerotusk_/"><img class="icon" src="{directory}../images/logos/Instagram_Glyph_White.svg" alt="Aerotusk - Instagram" title="Aerotusk - Instagram"></a>
             </div>
         </div>
 

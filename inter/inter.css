@@ -25,7 +25,7 @@ p /* overrides only */
 
 .box /* overrides only */
 {
-  background-image: url("..\\images\\interChecker.svg");
+  background-image: url("..\\images\\checkers\\interChecker.svg");
   border-color:#86acbadb;
 }
 

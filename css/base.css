@@ -7,14 +7,6 @@ body
   background-size: cover;
 }
 
-.orbiter
-{
-    position:absolute;
-    top:50%;
-    left:50%;
-    z-index: 0;
-}
-
 img
 {
     image-rendering: pixelated

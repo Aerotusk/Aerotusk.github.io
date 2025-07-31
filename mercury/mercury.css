@@ -24,7 +24,7 @@ p  /* overrides only */
 
 .box /* overrides only */
 {
-  background-image: url("..\\images\\mercuryChecker.svg");
+  background-image: url("..\\images\\checkers\\mercuryChecker.svg");
   border-color:#979797db;
 }
 

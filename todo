@@ -1,7 +1,5 @@
 Fade-in animation for the planets
 
-Pull and cache planetary orbit data from Horizons (maybe also add rotation period?)
-
 Make ellipses fade out in retrograde direction (dotted line with evenly spaced dots, each one getting progressively dimmer until a floor value)
     Nevermind on the dots/dashes, they look awful. Still might be able to do the dimming using a bunch of circles, though
 
