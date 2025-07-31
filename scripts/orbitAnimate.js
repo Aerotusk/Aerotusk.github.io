@@ -1,6 +1,6 @@
 //This file should ONLY include functions for animating orbits
 
-const firstPtAries = 190.2+273.0+357.3;
+const firstPtAries = 190.2+273.0+357.3; // Earth location on Jan 1, 2025
 
 function calculateOrbits(planetList)
 {
@@ -20,7 +20,7 @@ function calculateOrbits(planetList)
             var element = document.getElementById(obj);
             var style = window.getComputedStyle(element);
             var size = parseFloat(style.getPropertyValue('width'),10); //width and height are equal for all planets
-            let orbitTime = 360 * ((timeDiff) / 86400000) / planet.per;
+            let orbitTime = (360 * ((timeDiff) / 86400000)) / planet.per;
 
             let xCoord = -planet.rad * Math.sin((planet.pos - firstPtAries + orbitTime) * Math.PI / 180) * 1.5; //Make it kinda elliptical
             let yCoord = -planet.rad * Math.cos((planet.pos - firstPtAries + orbitTime) * Math.PI / 180) / 2;

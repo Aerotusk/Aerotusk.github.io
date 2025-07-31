@@ -4,7 +4,7 @@ import sys
 import json
 import base64
 from requests import get
-from datetime import date
+from datetime import timezone,datetime
 
 # When using the web application:
 # Osculating orbital elements
@@ -30,7 +30,7 @@ class EphemerisData: # Need to update this to properly search the input data and
         self.OrbitalPeriod = paramIn[11][1]
 
 class PlanetarySystem:
-    def __init__(self,name:str,id,ephemeris:EphemerisData,ephTime:date):
+    def __init__(self,name:str,id,ephemeris:EphemerisData,ephTime:datetime):
         self.name = name
         self.id = id
         self.orbit = ephemeris
@@ -56,8 +56,9 @@ class PlanetarySystem:
 #            Neptune, 
 #            Pluto]
 
-def horizonsGetEphemeris(planetID:str,time:date): # Lots of this grabbed from Python example in Horizons API Documentation, found here: https://ssd-api.jpl.nasa.gov/doc/horizons.html
-    hTime = time.isoformat()
+def horizonsGetEphemeris(planetID:str,time:datetime): # Lots of this grabbed from Python example in Horizons API Documentation, found here: https://ssd-api.jpl.nasa.gov/doc/horizons.html
+    # Yeah, TDB will be seconds off from UTC, but I don't have a method for converting between the two at the moment
+    hTime = time.astimezone(timezone.utc).strftime("%Y-%b-%d %H:%M:%S")
     htListType = "CAL"
     hTimeType = "TDB"
     HORIZONS = "https://ssd.jpl.nasa.gov/api/horizons.api"
@@ -117,8 +118,9 @@ def horizonsGetEphemeris(planetID:str,time:date): # Lots of this grabbed from Py
     return resp.text
 
 
-def writeEphemerisFile(filename:str,refDate:date,periods:list,positions:list,radii:list):
-    dateString = f"const refDate = new Date('{refDate.isoformat()}')\n"
+def writeEphemerisFile(filename:str,refDate:datetime,periods:list,positions:list,radii:list):
+    timestamp = refDate.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
+    dateString = f"const refDate = new Date('{timestamp}-00:00')\n"
     radString = "const orbitRadius = [0,50,100,150,200,250,300,350,400,450,500]\n"
     periodStrings = "const orbitPeriods = ["
     for i in periods:
@@ -150,7 +152,7 @@ if __name__ == "__main__":
     planetarySystems = []
     planets = ["Sun","Mercury","Venus","Earth","Mars","Inter","Jupiter","Saturn","Uranus","Neptune","Pluto"]
     planetIds = [0,1,2,3,4,0,5,6,7,8,9]
-    refDate=date.today()
+    refDate=datetime.now()
     for i in range(len(planets)):
         if(planetIds[i] != 0):
             # Actually get ephemeris data
@@ -170,4 +172,4 @@ if __name__ == "__main__":
         elements = [i.orbit.LongitudeAscendingNode,i.orbit.ArgumentOfPeriapsis,i.orbit.TrueAnomaly]
         orbitPeriods.append(period)
         orbitPositions.append(elements)
-    writeEphemerisFile("toolbox/ephemeris.js",refDate,orbitPeriods,orbitPositions,orbitRadii)
+    writeEphemerisFile("scripts/ephemeris.js",refDate,orbitPeriods,orbitPositions,orbitRadii)
