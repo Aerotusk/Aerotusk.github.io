@@ -32,7 +32,7 @@ function populatePlanets() // This is to hopefully negate the need for a table. 
             var yLoc = r * gridSize + t_planetSize / 2;
             let planetID = r.toString() + c.toString() + "DIV";
             var testBox = document.getElementById("planetGrowShrinkDiv")
-            testBox.innerHTML += `<img onmouseenter=\"planetResizeTest('${planetID}')\" class=\"testPlanet\" id=\"${planetID}Obj\" src=\"../images/Mercury.png\" style=\"height:${t_planetSize}px; width:${t_planetSize}px; transform:translate(${xLoc}px, ${yLoc}px);\"></img>`;
+            testBox.innerHTML += `<img onmouseenter=\"planetResizeTest('${planetID}')\" class=\"testPlanet\" id=\"${planetID}Obj\" src=\"../images/planets/Mercury.png\" style=\"height:${t_planetSize}px; width:${t_planetSize}px; transform:translate(${xLoc}px, ${yLoc}px);\"></img>`;
         }
     }
 }
