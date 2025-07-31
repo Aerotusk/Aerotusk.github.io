@@ -1,3 +1,5 @@
+// OLD ORBIT DATA FILE, DO NOT USE
+// USE ephemeris.js INSTEAD, AS IT UPDATES AUTOMATICALLY
 // // CONSTANTS
 
 // // Okay, maybe I should be thinking a little harder about this.
