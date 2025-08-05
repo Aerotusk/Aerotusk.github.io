@@ -4,26 +4,84 @@
     <head>
         <title>Jupiter - Aerotusk</title>
         <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/feed.css">
+        <link rel="stylesheet" href="project.css">
         <link rel="stylesheet" href="jupiter.css">
         <link rel="icon" type="image" href="../images/planets/Jupiter.png">
     </head>
     <body>
-        <!-- How do I want this page laid out? -->
-        <!-- Some kind of sidebar with a list of project names (moon codenames?) -->
-        <!-- Clicking on a tab fades out the current item and fades in a new one -->
-        <!-- Project page and projects list independently scrollable -->
-        <!-- Project pages are stored as separate .html files? -->
-        <!-- Don't forget to keep back/forward functionality between internal pages! -->
-        <h1>Welcome to Jupiter!</h1>
-        <a href="."><img src="../images/planets/Jupiter.png" alt="Jupiter" title="big boi!" style="width:80;height:80px;"></a>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        <!-- Left Sidebar: List of moons (projects) -->
+        <div id="projectList">
+            <div class="projectListItem"><p class="projectListText">bruh1</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh2</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh3</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh4</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh5</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh1</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh2</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh3</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh4</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh5</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh1</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh2</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh3</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh4</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh5</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh1</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh2</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh3</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh4</p></div>
+            <div class="projectListItem"><p class="projectListText">bruh5</p></div>
+        </div>
 
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-            
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-            
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-            
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        <div id="col2">
+            <div id="headerBox">
+                <div id="headerLeft">
+                    <h1><em>Jupiter</em></h1>
+                    <h2><em>Project Portfolio</em></h2>
+                </div>
+                <div id="headerRight">
+                    <a href="."><img id="planet" src="../images/planets/Jupiter.png" alt="Jupiter" title="Big boi"></a>
+                </div>
+            </div>
+
+            <div id="navbar">       
+                <script src="../scripts/navbar.js"></script>     
+                <script src="../scripts/planetData.js"></script>
+                <script src="../scripts/planetResize.js"></script>
+            </div>
+            <!-- How do I want this page laid out? -->
+            <!-- Some kind of sidebar with a list of project names (moon codenames?) -->
+            <!-- Clicking on a tab fades out the current item and fades in a new one -->
+            <!-- Project page and projects list independently scrollable -->
+            <!-- Project pages are stored as separate .html files? -->
+            <!-- Don't forget to keep back/forward functionality between internal pages! -->
+
+            <!-- Middle: Project content -->
+            <div id="project">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+            </div>
+
+            <div id="footerBox">
+                <h2 style="margin: auto;">
+                    <a href="#" style="text-decoration: none;color:inherit;opacity:50%;"><em>To The Top</em></a>
+                </h2>
+                <div style="margin-top: 12px;">
+                    <a href="https://www.youtube.com/@Aerotusk"><img class="icon" style="width:46.6px;" src="../images/logos/youtube.svg" alt="Aerotusk - YouTube" title="Aerotusk - YouTube"></a>
+                    <a href="https://www.twitch.tv/aerotusk"><img class="icon" src="../images/logos/glitch_flat_ice.svg" alt="Aerotusk - Twitch" title="Aerotusk - Twitch"></a>
+                    <a href="https://www.instagram.com/aerotusk_/"><img class="icon" src="../images/logos/Instagram_Glyph_White.svg" alt="Aerotusk - Instagram" title="Aerotusk - Instagram"></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
