@@ -15,7 +15,7 @@ body
     position: sticky; */
     left: 0;
     top:0;
-    overflow-y: scroll;
+    overflow: auto;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
 }
@@ -50,8 +50,9 @@ body
 
 #col2
 {
+    top:0;
     width: 80%;
-    overflow: scroll;
+    overflow: auto;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
 }
