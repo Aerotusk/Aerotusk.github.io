@@ -1,0 +1,1 @@
+// Move to the right by a fixed number of pixels on hover.
