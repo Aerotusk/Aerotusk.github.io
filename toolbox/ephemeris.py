@@ -3,6 +3,7 @@
 import sys
 import json
 import base64
+from toolbox_secrets import emailAddr
 from requests import get
 from datetime import timezone,datetime
 
@@ -68,9 +69,9 @@ def horizonsGetEphemeris(planetID:str,time:datetime): # Lots of this grabbed fro
     obj_data = "YES"
     make_ephem = "YES"
     ephem_type = "ELEMENTS"
-    email_addr = ""
+    email_addr = emailAddr()
 
-    query = f"{HORIZONS}?format={format}&COMMAND='{command}'&OBJ_DATA='{obj_data}'&MAKE_EPHEM='{make_ephem}'&EPHEM_TYPE='{ephem_type}'&CENTER='{center}'&TLIST='{hTime}'&TLIST_TYPE='{htListType}'&TIME_TYPE='{hTimeType}'" 
+    query = f"{HORIZONS}?format={format}&COMMAND='{command}'&OBJ_DATA='{obj_data}'&MAKE_EPHEM='{make_ephem}'&EPHEM_TYPE='{ephem_type}'&CENTER='{center}'&TLIST='{hTime}'&TLIST_TYPE='{htListType}'&TIME_TYPE='{hTimeType}&EMAIL_ADDR='{email_addr}'" 
 
     resp = get(query)
 
