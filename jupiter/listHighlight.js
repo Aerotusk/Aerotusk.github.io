@@ -1,14 +1,14 @@
 // Move to the right by a fixed number of pixels on hover.
 
-const animationDuration = 80;
-const animationShift = 70;
-const animationRate = 23;
+const highlightDuration = 80;
+const highlightShift = 70;
+const highlightRate = 23;
 const moveAmount = 25;
 const startAmt = -35;
 
 function listMove(caller)
 {
-    var element = document.getElementById(caller);
+    var element = document.getElementById(caller); //Might be able to eliminate some code here by directly passing in caller instead of 'caller'
     
     let id = null;
     let storedStep = 0;
@@ -18,9 +18,9 @@ function listMove(caller)
     
     function moveitmoveit()
     {
-        if(storedStep != step) // If the animation is still playing:
+        if(storedStep != step) // If the highlight is still playing:
         {
-            let xCoord = startAmt + (moveAmount * (logistic(step + animationShift,animationRate,animationDuration)));
+            let xCoord = startAmt + (moveAmount * (logistic(step + highlightShift,highlightRate,highlightDuration)));
 
             document.getElementById(caller).style.transform = 'translateX('+ xCoord + 'px)';
 
@@ -28,7 +28,7 @@ function listMove(caller)
         }
 
         if(element.matches(':hover')){ // If mouse is still over the planet:
-            if(step < (animationDuration * 2) - animationShift - 55) {
+            if(step < (highlightDuration * 2) - highlightShift - 55) {
                 step++;
             }
         } 

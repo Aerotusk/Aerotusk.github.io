@@ -32,7 +32,6 @@ body
     right:0;
     /* top:0; */
 
-
     overflow-y: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
@@ -66,6 +65,7 @@ body
     margin-right:6px;
     margin-top: 9px;
     margin-bottom: 9px;
+    pointer-events: none;
 }
 
 #col2
