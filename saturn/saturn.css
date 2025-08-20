@@ -1,10 +1,20 @@
-h1 {
+h1 
+{
   color: #dacd98;
 }
-p {
-  color: #d8a24a;
+
+h2 
+{
+  color: #c9c19e;
 }
-div {
-  width:750px;
-  margin:auto;
+
+p 
+{
+  color: #594930;
+}
+
+.projectListItem
+{
+    border-color: #dfdbd5;
+    background-color: #b8b08f;
 }
