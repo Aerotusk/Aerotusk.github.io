@@ -10,3 +10,9 @@ p
 {
   color: #604a00; 
 }
+
+.projectListItem
+{
+    border-color: #e8c285;
+    background-color: #ffcc00;
+}
