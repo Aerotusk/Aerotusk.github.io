@@ -1,8 +1,20 @@
+html{
+    overflow:hidden;
+    height:100%;
+}
+
 body
 {
-    overflow: scroll;
+    height:100%;
+}
+
+.wrapper
+{
     display:grid;
-    grid-template-columns: 350px auto;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    grid-template-columns: 150px auto;
     border: none;
     margin-left: 0;
     margin-right: 0;
@@ -12,16 +24,19 @@ body
 {
     grid-column: 1;
     height: 100%;
-    width: 150px;
+    width: 100%;
     margin: 0%;
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    top:0;
-    overflow: scroll;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    text-align: right;
+    right:0;
+    /* top:0; */
+
+
+    overflow-y: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
-    text-align: right;
+    
 }
 #projectList::-webkit-scrollbar 
 { 
@@ -32,12 +47,14 @@ body
 {
     height:36px;
     width:100%;
+
     border-style: solid;
     border-width: 2px;
     border-radius: 12px;
-    border-color: #d8a24a;
-    background-color: #c5a833;
-    opacity: 40%;
+    border-color: #e8c285;
+    background-color: #ffcc00;
+    opacity: 50%;
+
     position: relative;
     margin-top:5px;
     margin-bottom: 5px;
@@ -54,11 +71,22 @@ body
 #col2
 {
     top:0;
-    width: 70%;
-    overflow: scroll;
+    width: 100%;
+    height:100%;
+    
+    overflow-y: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
 }
+
+#contentBox
+{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height:100%;
+}
+
 #col2::-webkit-scrollbar 
 { 
     display: none;  /* Older Safari and Chromium */
