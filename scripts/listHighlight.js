@@ -8,8 +8,6 @@ const startAmt = -35;
 
 function listMove(caller)
 {
-    var element = document.getElementById(caller); //Might be able to eliminate some code here by directly passing in caller instead of 'caller'
-    
     let id = null;
     let storedStep = 0;
     let step = 1;
@@ -22,12 +20,12 @@ function listMove(caller)
         {
             let xCoord = startAmt + (moveAmount * (logistic(step + highlightShift,highlightRate,highlightDuration)));
 
-            document.getElementById(caller).style.transform = 'translateX('+ xCoord + 'px)';
+            caller.style.transform = 'translateX('+ xCoord + 'px)';
 
             storedStep = step;
         }
 
-        if(element.matches(':hover')){ // If mouse is still over the planet:
+        if(caller.matches(':hover')){ // If mouse is still over the planet:
             if(step < (highlightDuration * 2) - highlightShift - 55) {
                 step++;
             }

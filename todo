@@ -9,6 +9,8 @@ Add moving shadows to the planets? Somehow idk
 
 Make the solar system rotatable (stretch goal)
 
-Fix social media button color
+Fix social media button color - might need the svgs to be callable js functions (footer as a js function?)
 
 Mobile version of the site LMAOOOOO
+
+Add velocity to planet/list animations so they feel a bit more natural
