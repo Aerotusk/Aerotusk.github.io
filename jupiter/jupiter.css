@@ -8,11 +8,17 @@ h2
 }
 p 
 {
-  color: #604a00; 
+  color: #d1be84; 
 }
 
 .projectListItem
 {
     border-color: #e8c285;
     background-color: #ffcc00;
+}
+
+#project /* Centered (offset due to list?) */
+{
+    border-color:#dec67ddb;
+    background-image: url("..\\images\\checkers\\jupiterChecker.svg");
 }

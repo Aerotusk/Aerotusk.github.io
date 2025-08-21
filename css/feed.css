@@ -82,7 +82,7 @@ iframe
 }
 
 .box{ /* Override background image and border color in page-specific css */
-  background-image: url("..\\images\\checker.svg");
+  background-image: url("..\\images\\checkers\\checker.svg");
   border-color:#86acbadb;
 
   -moz-border-radius: 12px;

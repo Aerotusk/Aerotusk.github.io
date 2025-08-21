@@ -4,7 +4,7 @@ function populatePortfolio(moons)
     for (i = 0; i < moons.length; i++)
     {
         moon = moons[i];
-        portfolioLocation.innerHTML += (`<div onmouseenter=\"listMove('${moon}')\" onclick=\"portfolio('${moon}')\" id=\"${moon}\" class=\"projectListItem\"><p class=\"projectListText\">${moon}</p></div>`)
+        portfolioLocation.innerHTML += (`<div onmouseenter=\"listMove(${moon})\" onclick=\"portfolio('${moon}')\" id=\"${moon}\" class=\"projectListItem\"><p class=\"projectListText\">${moon}</p></div>`)
     }
 }
 
