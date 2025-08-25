@@ -1,11 +1,35 @@
-h1 {
-  color: #f8bb76;
-}
-p {
-  color: #d1995a;
+h1 /* overrides only */
+{
+  color: #f8de76;
 }
 
-div {
-  width:750px;
-  margin:auto;
+h2 /* overrides only */
+{
+  color: #f8de76;
+}
+
+h3 /* overrides only */
+{
+  color: #f8de76;
+}
+
+h4 /* overrides only */
+{
+  color: #f8de76;
+}
+
+p /* overrides only */
+{
+  color: #000000;
+}
+
+.box /* overrides only */
+{
+  background-image: url("..\\images\\checkers\\venusChecker.svg");
+  border-color:#efcf1adb;
+}
+
+.planet
+{
+  position:absolute;
 }
