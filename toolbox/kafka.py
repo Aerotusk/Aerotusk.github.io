@@ -2,7 +2,7 @@ from gcn_kafka import Consumer
 from toolbox_secrets import gcn_client
 from toolbox_secrets import gcn_secret
 
-# Connect as a consumer (client "Danny Laptop")
+# Connect as a consumer
 # Warning: don't share the client secret with others.
 consumer = Consumer(client_id=gcn_client(),
                     client_secret=gcn_secret())

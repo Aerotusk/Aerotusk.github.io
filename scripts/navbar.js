@@ -7,7 +7,7 @@ function addNavbar()
     document.head.innerHTML += "<link rel='stylesheet' href='../css/navbar.css'>";
 
     // Find Navbar div and add all the planets (with resize scripts as well)
-    var navbarDiv = document.getElementById("navbar");
+    let navbarDiv = document.getElementById("navbar");
     navbarDiv.innerHTML +=
     `
     <a onmouseenter="planetResize(Sun)"     href="../sun/">     <img id="sun"     src="../images/planets/Sun.png"     alt="The Sun"       title="Ooooh, ahhhhhh"></a>

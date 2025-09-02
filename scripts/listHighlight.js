@@ -1,5 +1,4 @@
 // Move to the right by a fixed number of pixels on hover.
-
 const highlightDuration = 80;
 const highlightShift = 70;
 const highlightRate = 23;
@@ -19,9 +18,7 @@ function listMove(caller)
         if(storedStep != step) // If the highlight is still playing:
         {
             let xCoord = startAmt + (moveAmount * (logistic(step + highlightShift,highlightRate,highlightDuration)));
-
             caller.style.transform = 'translateX('+ xCoord + 'px)';
-
             storedStep = step;
         }
 

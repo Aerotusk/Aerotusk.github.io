@@ -3,7 +3,7 @@ Fade-in animation for the planets
 Make ellipses fade out in retrograde direction (dotted line with evenly spaced dots, each one getting progressively dimmer until a floor value)
     Nevermind on the dots/dashes, they look awful. Still might be able to do the dimming using a bunch of circles, though
 
-Add some quiet sounds on hover over planets
+Add some quiet sounds on hover over planets (Not working atm, "promise" to not play sounds until interaction but hover doesn't count :/ )
 
 Add moving shadows to the planets? Somehow idk
 
@@ -14,5 +14,3 @@ Fix social media button color - might need the svgs to be callable js functions 
 Mobile version of the site LMAOOOOO
 
 Add velocity to planet/list animations so they feel a bit more natural
-
-Go back and fix var/let/etc in all .js

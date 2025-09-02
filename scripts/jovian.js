@@ -1,4 +1,4 @@
-jovianMoons = [
+const jovianMoons = [
     "Ganymede",
     "Callisto",
     "Io",

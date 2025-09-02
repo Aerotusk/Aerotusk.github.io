@@ -6,19 +6,17 @@ const animationRate = 23;
 const resizeAmount = 0.1;
 
 // Not working atm...need to have it play sounds separately and find a way to play sound even when the screen hasn't been clicked yet
-var trib = new Audio('../sounds/trib.ogg');
-function hoverSound()
-{    
-    trib.play();
-}
+// var trib = new Audio('../sounds/trib.ogg');
+// function hoverSound()
+// {    
+//     trib.play();
+// }
 
 function planetResize(planet)
 {
-
-    let obj = planet.pName;
     let step = planet.step;
-    var dim = planet.dims;
-    var element = document.getElementById(obj);
+    let dim = planet.dims;
+    let lmnt = document.getElementById(planet.pName);
     
     let id = null;
     clearInterval(id);
@@ -33,13 +31,13 @@ function planetResize(planet)
             let xCoord = planet.org[0] - (size / 2);
             let yCoord = planet.org[1] - (size / 2);
 
-            document.getElementById(obj).style.width = size + 'px';
-            document.getElementById(obj).style.height = size + 'px';
-            document.getElementById(obj).style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
+            lmnt.style.width = size + 'px';
+            lmnt.style.height = size + 'px';
+            lmnt.style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
             planet.step = step;
         }
 
-        if(element.matches(':hover')){ // If mouse is still over the planet:
+        if(lmnt.matches(':hover')){ // If mouse is still over the planet:
             if(step < (animationDuration * 2) - animationShift - 55) {
                 step++;
             }

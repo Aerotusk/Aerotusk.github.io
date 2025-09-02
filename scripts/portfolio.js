@@ -3,7 +3,7 @@ function populatePortfolio(moons)
     let portfolioLocation = document.getElementById("projectList");
     for (let i = 0; i < moons.length; i++)
     {
-        moon = moons[i];
+        let moon = moons[i];
         portfolioLocation.innerHTML += (`<div onmouseenter=\"listMove(${moon})\" onclick=\"portfolio('${moon}')\" id=\"${moon}\" class=\"projectListItem\"><p class=\"projectListText\">${moon}</p></div>`);
     }
 }
@@ -57,8 +57,8 @@ function portfolio(moon) // Function that gets called on-click
 
 function loadFile(filePath) // From https://stackoverflow.com/questions/36921947/read-a-server-side-file-using-javascript 
 {
-    var result = null;
-    var xmlhttp = new XMLHttpRequest();
+    let result = null;
+    let xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", filePath, false);
     xmlhttp.send();
     if (xmlhttp.status==200) 

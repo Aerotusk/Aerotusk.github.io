@@ -31,8 +31,8 @@ def comicFiller(dirHeight,pageTitle,first,prev,rand,next,last,src,title,altText,
         </div>
 
         <div id="navbar">
+            <script src="{directory}../scripts/resize.js"></script>
             <script src="{directory}../scripts/planetData.js"></script>
-            <script src="{directory}../scripts/planetResize.js"></script>
             <a onmouseenter="planetResize(Sun)"     href="{directory}../sun/">     <img id="sun"     src="{directory}../images/planets/Sun.png"     alt="The Sun"       title="Ooooh, ahhhhhh"></a>
             <a onmouseenter="planetResize(Mercury)" href="{directory}../mercury/"> <img id="mercury" src="{directory}../images/planets/Mercury.png" alt="Mercury"       title="IT BURNS"></a>
             <a onmouseenter="planetResize(Venus)"   href="{directory}../venus/">   <img id="venus"   src="{directory}../images/planets/Venus.png"   alt="Venus"         title="oh lawdy it's acid rain"></a>
