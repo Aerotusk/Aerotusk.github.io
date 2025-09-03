@@ -5,12 +5,11 @@ const animationShift = 74;
 const animationRate = 23;
 const resizeAmount = 0.1;
 
-// Not working atm...need to have it play sounds separately and find a way to play sound even when the screen hasn't been clicked yet
-// var trib = new Audio('../sounds/trib.ogg');
-// function hoverSound()
-// {    
-//     trib.play();
-// }
+function hoverSound()
+{    
+    // let trib = new Audio('../sounds/trib.ogg');
+    // trib.play(); // Throws an error when planets are hovered but screen has not been clicked / interacted with
+}
 
 function planetResize(planet)
 {
