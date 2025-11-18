@@ -22,3 +22,8 @@ p
     border-color:#dec67ddb;
     background-image: url("..\\images\\checkers\\jupiterChecker.svg");
 }
+
+.icon
+{
+  fill: #dacd98;
+}

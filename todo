@@ -14,3 +14,9 @@ Fix social media button color - might need the svgs to be callable js functions 
 Mobile version of the site LMAOOOOO
 
 Add velocity to planet/list animations so they feel a bit more natural
+
+Optimize icon svg code
+
+Center footer icons vertically
+
+Get rid of footer link underlines
