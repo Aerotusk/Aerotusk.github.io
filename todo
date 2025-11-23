@@ -2,6 +2,7 @@ Fade-in animation for the planets
 
 Make ellipses fade out in retrograde direction (dotted line with evenly spaced dots, each one getting progressively dimmer until a floor value)
     Nevermind on the dots/dashes, they look awful. Still might be able to do the dimming using a bunch of circles, though
+    + Use conic gradients, relatively new to CSS
 
 Add some quiet sounds on hover over planets (Not working atm, "promise" to not play sounds until interaction but hover doesn't count :/ )
 
@@ -9,14 +10,6 @@ Add moving shadows to the planets? Somehow idk
 
 Make the solar system rotatable (stretch goal)
 
-Fix social media button color - might need the svgs to be callable js functions (footer as a js function?)
-
 Mobile version of the site LMAOOOOO
 
 Add velocity to planet/list animations so they feel a bit more natural
-
-Optimize icon svg code
-
-Center footer icons vertically
-
-Get rid of footer link underlines
