@@ -5,3 +5,10 @@
     left:50%;
     z-index: 0;
 }
+
+.gradientTest 
+{
+    stroke-width: 2;
+    stroke: conic-gradient(red, orange, yellow, green, blue);
+}
+/* Conic gradient doesn't work with SVG. So, need to make conic-gradient a background image then use an svg path to clip it out. EEK! */
