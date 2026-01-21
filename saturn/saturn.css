@@ -19,6 +19,17 @@ p
     background-color: #b8b08f;
 }
 
+.projectListText
+{
+  color:#565448;
+}
+
+#project /* Centered (offset due to list?) */
+{
+    border-color:#d1c39adb;
+    background-image: url("..\\images\\checkers\\checker.svg");
+}
+
 .icon
 {
   fill:#dacd98;

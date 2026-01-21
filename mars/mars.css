@@ -1,11 +1,39 @@
-h1 {
-  color: #f8bb76;
+h1 /* overrides only */
+{
+  color: #ff9e4e;
 }
-p {
-  color: #604937;
+h2 /* overrides only */
+{
+  color: #ff9e4e;
 }
 
-div {
-  width:750px;
-  margin:auto;
+h3 /* overrides only */
+{
+  color: #ff9e4e;
+}
+
+h4 /* overrides only */
+{
+  color: #ff9e4e;
+}
+
+p /* overrides only */
+{
+  color: #ff9e4e;
+}
+
+.box /* overrides only */
+{
+  background-image: url("..\\images\\checkers\\checker.svg");
+  border-color:#ff9e4edb;
+}
+
+.planet
+{
+  position:absolute;
+}
+
+.icon
+{
+  fill: #ff9e4e;
 }

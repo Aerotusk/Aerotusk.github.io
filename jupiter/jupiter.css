@@ -17,6 +17,11 @@ p
     background-color: #ffcc00;
 }
 
+.projectListText
+{
+  color:#6c2100;
+}
+
 #project /* Centered (offset due to list?) */
 {
     border-color:#dec67ddb;

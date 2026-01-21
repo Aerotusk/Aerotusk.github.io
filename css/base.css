@@ -1,3 +1,7 @@
+html 
+{
+  overflow-y: scroll; /* Prevent page from shifting when scrollbar appears. Watch out for permanent scrollbar on some browsers? */
+}
 body 
 {
   background-color: #000000;
@@ -6,8 +10,7 @@ body
   background-attachment: fixed;
   background-size: cover;
 }
-
 img
 {
-    image-rendering: pixelated
+  image-rendering: pixelated;
 }
