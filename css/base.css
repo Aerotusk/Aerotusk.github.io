@@ -1,6 +1,13 @@
 html 
 {
-  overflow-y: scroll; /* Prevent page from shifting when scrollbar appears. Watch out for permanent scrollbar on some browsers? */
+    overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar
+{ 
+    display: none;  /* Older Safari and Chromium */
 }
 body 
 {
@@ -9,6 +16,8 @@ body
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  margin: 0;
+  border: 0;
 }
 img
 {

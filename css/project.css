@@ -4,7 +4,7 @@ html /* This is necessary, I guess?*/
     overflow:hidden;
 }
 
-body /* This is necessary, I guess?*/ 
+body
 {
     height:100%;
 }
@@ -15,18 +15,23 @@ body /* This is necessary, I guess?*/
     margin:0;
     width:100%;
     height:100%;
-    display:grid;
+    display:flex;
     overflow: hidden;
     grid-template-columns: 150px auto;
-    transform: translate(-36px,0);
+}
+
+#headerBox
+{
+    margin:auto;
 }
 
 #projectList /* Left side, anchored on its own, table?*/
 {
-    margin: 0%;
+    margin:0;
+    border:0;
     width: 100%;
     height: 100%;
-    grid-column: 1;
+    flex: 0 0 150px;
 
     right:0;
     text-align: right;
@@ -71,8 +76,11 @@ body /* This is necessary, I guess?*/
 #col2
 {
     top:0;
-    width: 100%;
+    flex: 1 1 auto;
     height:100%;
+    grid-column: 2;
+    margin:none;
+    border:0;
     
     overflow-y: scroll;
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
@@ -82,26 +90,18 @@ body /* This is necessary, I guess?*/
 #col3
 {
     margin: 0%;
-    width: 36px;
+    border: 0;
+    flex: 0 0 150px;
     height: 100%;
-    grid-column: 1;
+    grid-column: 3;
 
     right:0;
     text-align: left;
-
-    overflow-y: scroll;
-    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-
-#col3::-webkit-scrollbar 
-{
-    display: none;  /* Older Safari and Chromium */
 }
 
 #contentBox
 {
-    width:744px; /* Must be... multiple of 16 + 8? Something about it starts off at 24px so it should be (size you want) - 24px*/
+    width:780px; /* Must be... multiple of 16 + 8? Something about it starts off at 24px so it should be (size you want) - 24px*/
     margin:auto;
     border:none;
     height:100%;
@@ -115,6 +115,7 @@ body /* This is necessary, I guess?*/
 {
     border-color:#ff0000db;
     background-image: url("..\\images\\checkers\\checker.svg");
+    width:744px;
 
     border-style:solid;
     border-width:1.5px;

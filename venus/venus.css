@@ -38,3 +38,22 @@ p /* overrides only */
 {
   fill:#f8de76;
 }
+
+/*Everything related to double column format*/
+
+#col1
+{
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+
+}
+
+#col2
+{
+    top:0;
+    width: 100%;
+    height:100%;
+    grid-column: 2;
+}
