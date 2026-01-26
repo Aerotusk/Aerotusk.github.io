@@ -6,26 +6,30 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/planet_size.css">
         <link rel="stylesheet" href="sun.css">
-        <link rel="icon" type="image/gif" href="../images/favicon.png">
-        <link rel="shortcut icon" type="image/gif" href="../images/favicon.png">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
     </head>
     <body class="content">
         <svg width="1510" height="500" style="position:absolute;top:50%;left:50%;transform:translate(-755px,-250px)">
-            <ellipse rx="75" ry="25" cx="50%" cy="50%" style="fill:#00000000;stroke:#93939355;stroke-width:3;"/>
-            <ellipse rx="150" ry="50" cx="50%" cy="50%" style="fill:#00000000;stroke:#fada7945;stroke-width:3;"/>
-            <ellipse rx="225" ry="75" cx="50%" cy="50%" style="fill:#00000000;stroke:#53a0ff47;stroke-width:3;"/>
-            <ellipse rx="300" ry="100" cx="50%" cy="50%" style="fill:#00000000;stroke:#d4858567;stroke-width:3;"/>
-            <ellipse rx="375" ry="125" cx="50%" cy="50%" style="fill:#00000000;stroke:#cbe3de45;stroke-width:3;"/>
-            <ellipse rx="450" ry="150" cx="50%" cy="50%" style="fill:#00000000;stroke:#fada7945;stroke-width:3;"/>
-            <ellipse rx="525" ry="175" cx="50%" cy="50%" style="fill:#00000000;stroke:#fee9a845;stroke-width:3;"/>
-            <ellipse rx="600" ry="200" cx="50%" cy="50%" style="fill:#00000000;stroke:#b6faff45;stroke-width:3;"/>
-            <ellipse rx="675" ry="225" cx="50%" cy="50%" style="fill:#00000000;stroke:#4da0ff43;stroke-width:3;"/>
-            <ellipse rx="750" ry="250" cx="50%" cy="50%" style="fill:#00000000;stroke:#93939355;stroke-width:3;"/>
+            <ellipse rx="75" ry="25" cx="50%" cy="50%" style="fill:#0000;stroke:#93939355;stroke-width:3;"/>
+            <ellipse rx="150" ry="50" cx="50%" cy="50%" style="fill:#0000;stroke:#fada7945;stroke-width:3;"/>
+            <ellipse rx="225" ry="75" cx="50%" cy="50%" style="fill:#0000;stroke:#53a0ff47;stroke-width:3;"/>
+            <ellipse rx="300" ry="100" cx="50%" cy="50%" style="fill:#0000;stroke:#d4858567;stroke-width:3;"/>
+            <ellipse rx="375" ry="125" cx="50%" cy="50%" style="fill:#0000;stroke:#cbe3de45;stroke-width:3;"/>
+            <ellipse rx="450" ry="150" cx="50%" cy="50%" style="fill:#0000;stroke:#fada7945;stroke-width:3;"/>
+            <ellipse rx="525" ry="175" cx="50%" cy="50%" style="fill:#0000;stroke:#fee9a845;stroke-width:3;"/>
+            <ellipse rx="600" ry="200" cx="50%" cy="50%" style="fill:#0000;stroke:#b6faff45;stroke-width:3;"/>
+            <ellipse rx="675" ry="225" cx="50%" cy="50%" style="fill:#0000;stroke:#4da0ff43;stroke-width:3;"/>
+            <ellipse rx="750" ry="250" cx="50%" cy="50%" style="fill:#0000;stroke:#93939355;stroke-width:3;"/>
         </svg>
-        <a id="Settings Button" href=".">
-            <img src="../images/settings.svg" style="width:48px;height:48px;position:absolute;top:0%;right:0%;transform:translate(-12px,12px);" alt="Settings Button" title="Settings Button: Coming Soon">
-        </a>
-        <!-- <script src="planetAnimations.js"></script> -->
+        
+        
+        <script src="../scripts/settings.js"></script>
+        <link rel="stylesheet" href="../css/settings.css">
+        <img id="settingsButton" src="../images/settings.svg" onclick="settingsPage(this)" onmouseenter="settingsResize(this)" alt="Settings Button" title="Settings Button: Coming Soon">
+
+        
+
         <script src="../scripts/resize.js"></script>
         <script src="../scripts/planetData.js"></script>
         <script src="../scripts/ephemeris.js"></script>

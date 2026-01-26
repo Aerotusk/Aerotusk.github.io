@@ -1,0 +1,10 @@
+#settingsButton
+{
+    cursor:pointer;
+    width:48px;
+    height:48px;
+    position:absolute;
+    top:0%;
+    right:0%;
+    transform:translate(-12px,12px);
+}
