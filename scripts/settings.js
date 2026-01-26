@@ -8,7 +8,13 @@ const sResizeAmount = 0.1;
 function settingsPage(event)
 {
     console.log("you were expecting the settings page, weren't you?")
-    
+    let settingsButton = document.getElementById(event.id);
+    let settingsPage = document.getElementById('settingsPage');
+    let pageDimmer = document.getElementById('pageDimmer')
+    settingsButton.style.transform = 'translateX('+ 224 + 'px)';
+    settingsPage.style.transform = 'translateX('+ 0 + 'px)';
+    pageDimmer.style.backgroundColor = '#000c';
+    pageDimmer.style.pointerEvents = 'auto' // Prevent clicking through to the page
 }
 
 function settingsResize(event)
