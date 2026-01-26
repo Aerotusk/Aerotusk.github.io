@@ -11,7 +11,7 @@ function settingsPage(event)
     let settingsButton = document.getElementById(event.id);
     let settingsPage = document.getElementById('settingsPage');
     let pageDimmer = document.getElementById('pageDimmer')
-    settingsButton.style.transform = 'translateX('+ 224 + 'px)';
+    settingsButton.style.right = '204px';
     settingsPage.style.transform = 'translateX('+ 0 + 'px)';
     pageDimmer.style.backgroundColor = '#000c';
     pageDimmer.style.pointerEvents = 'auto' // Prevent clicking through to the page

@@ -1,4 +1,4 @@
-Fade-in animation for the planets
+Fade-in animation for the planets (or, finally add in a "landing" page to force interaction so the planet hover sound can play)
 
 Make ellipses fade out in retrograde direction (dotted line with evenly spaced dots, each one getting progressively dimmer until a floor value)
     Nevermind on the dots/dashes, they look awful. Still might be able to do the dimming using a bunch of circles, though
@@ -13,3 +13,7 @@ Make the solar system rotatable (stretch goal)
 Mobile version of the site LMAOOOOO
 
 Add velocity to planet/list animations so they feel a bit more natural
+
+Redo the grow/shrink code so it runs smoother and can be used for absolutely any object (instead of just planets)
+    ohhhh, maybe need to redo orbitAnimate so it changes planet coordinates instead of using translate/transform
+    Also, maybe change the image origins to be at image center so growing and shrinking is easier? (transform-origin = center) WOW that would simplify things lol (and would have been really nice to know)
