@@ -52,7 +52,7 @@ function settingsPage(event,dir)
         let percent = (stLogistic(step + sAnimationShift,sAnimationRate,sAnimationDuration)) - aniFactor;
         settingsButton.style.right = shiftAmt * percent + 'px';
         settingsPage.style.right = shiftAmt * percent + 'px';
-        pageDimmer.style.opacity = percent + '%';
+        pageDimmer.style.opacity = percent;
     }
 }
 
