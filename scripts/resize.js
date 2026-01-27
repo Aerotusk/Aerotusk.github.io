@@ -16,6 +16,7 @@ function planetResize(planet)
     let step = planet.step;
     let dim = planet.dims;
     let lmnt = document.getElementById(planet.pName);
+    let resizeOffset = logistic(animationShift,animationRate,animationDuration)
     
     let id = null;
     clearInterval(id);
@@ -25,7 +26,7 @@ function planetResize(planet)
     {
         if(planet.step != step) // If the animation is still playing:
         {
-            let size = dim * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration)));
+            let size = dim * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration) - resizeOffset));
 
             let xCoord = planet.org[0] - (size / 2);
             let yCoord = planet.org[1] - (size / 2);
