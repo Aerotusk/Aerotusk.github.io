@@ -5,16 +5,27 @@ const sAnimationShift = 74;
 const sAnimationRate = 23;
 const sResizeAmount = 0.1;
 
-function settingsPage(event)
+function settingsPage(event,dir)
 {
-    console.log("you were expecting the settings page, weren't you?")
     let settingsButton = document.getElementById(event.id);
     let settingsPage = document.getElementById('settingsPage');
-    let pageDimmer = document.getElementById('pageDimmer')
-    settingsButton.style.right = '204px';
-    settingsPage.style.transform = 'translateX('+ 0 + 'px)';
-    pageDimmer.style.backgroundColor = '#000c';
-    pageDimmer.style.pointerEvents = 'auto' // Prevent clicking through to the page
+    let pageDimmer = document.getElementById('pageDimmer');
+    if(dir == 1)
+    {
+        settingsButton.style.right = '204px';
+        settingsPage.style.right = '204px';
+        pageDimmer.style.backgroundColor = '#000c';
+        pageDimmer.style.pointerEvents = 'auto'; // Prevent clicking through to the page
+        settingsButton.setAttribute("onclick","settingsPage(this,0)")
+    }
+    else
+    {
+        settingsButton.style.right = '0px';
+        settingsPage.style.right = '0px';
+        pageDimmer.style.backgroundColor = '#0000';
+        pageDimmer.style.pointerEvents = 'none'; // Prevent clicking through to the page
+        settingsButton.setAttribute("onclick","settingsPage(this,1)")
+    }    
 }
 
 function settingsResize(event)
