@@ -35,7 +35,8 @@
     height: 100%;
     border: none;
     margin: none;
-    background-color: #0000;
+    background-color: #000c;
+    opacity: 0%;
     z-index: 2000;
     pointer-events:none;
 }

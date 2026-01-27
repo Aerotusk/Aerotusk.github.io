@@ -1,8 +1,8 @@
 // This file should ONLY include items relevant planetResize and helper functions
 
 const sAnimationDuration = 80;
-const sAnimationShift = 74;
-const sAnimationRate = 23;
+const sAnimationShift = 60;
+const sAnimationRate = 15;
 const sResizeAmount = 0.1;
 
 function settingsPage(event,dir)
@@ -10,22 +10,50 @@ function settingsPage(event,dir)
     let settingsButton = document.getElementById(event.id);
     let settingsPage = document.getElementById('settingsPage');
     let pageDimmer = document.getElementById('pageDimmer');
+    
+    let shiftAmt = 190;
+
+    let aniEnd = 45;
+    let aniStop = 0;
+    let aniFactor = stLogistic(aniStop + sAnimationShift,sAnimationRate,sAnimationDuration);
+
     if(dir == 1)
     {
-        settingsButton.style.right = '204px';
-        settingsPage.style.right = '204px';
-        pageDimmer.style.backgroundColor = '#000c';
-        pageDimmer.style.pointerEvents = 'auto'; // Prevent clicking through to the page
         settingsButton.setAttribute("onclick","settingsPage(this,0)")
+        pageDimmer.style.pointerEvents = 'auto'; // Prevent clicking through to the page
+        var startStep = aniStop;
+        var stopStep = aniEnd;
+        var direction = 1;
     }
     else
     {
-        settingsButton.style.right = '0px';
-        settingsPage.style.right = '0px';
-        pageDimmer.style.backgroundColor = '#0000';
-        pageDimmer.style.pointerEvents = 'none'; // Prevent clicking through to the page
         settingsButton.setAttribute("onclick","settingsPage(this,1)")
-    }    
+        pageDimmer.style.pointerEvents = 'none'; // Allow clicking through to the page
+        var startStep = aniEnd;
+        var stopStep = aniStop;
+        var direction = -1;
+    }
+    let step = startStep;
+
+    let anId = null;
+    clearInterval(anId);
+    anId = setInterval(stAnimate,15);
+    
+    function stAnimate()
+    {
+        step = step + direction;
+        if(step == stopStep) // Animation is OVER!
+        {
+            clearInterval(anId);
+        } 
+        else 
+        { 
+        }
+        let percent = (stLogistic(step + sAnimationShift,sAnimationRate,sAnimationDuration)) - aniFactor;
+        settingsButton.style.right = shiftAmt * percent + 'px';
+        settingsPage.style.right = shiftAmt * percent + 'px';
+        pageDimmer.style.opacity = percent + '%';
+    }
 }
 
 function settingsResize(event)
