@@ -5,13 +5,34 @@ const sAnimationShift = 60;
 const sAnimationRate = 15;
 const sResizeAmount = 0.1;
 
+function readSettingsCookies()
+{
+    // Reads cookies (if present) on page load and set checkboxes and dropdowns accordingly
+
+}
+
+function changeSetting(event)
+{
+    let setting = document.getElementById(event.id);
+    let settingBox = setting.checked // Returns whatever checkbox is being set TO
+    let settingDrop = document.getElementById(event.id+"Dropdown")
+    if(settingBox)
+    {
+        setCookie(setting.name,settingDrop.value,365)
+    }
+    else
+    {
+        delete_cookie(setting.name)
+    }
+}
+
 function settingsPage(event,dir)
 {
     let settingsButton = document.getElementById(event.id);
     let settingsPage = document.getElementById('settingsPage');
     let pageDimmer = document.getElementById('pageDimmer');
     
-    let shiftAmt = 190;
+    let shiftAmt = 290;
 
     let aniEnd = 45;
     let aniStop = 0;
@@ -100,5 +121,7 @@ function settingsResize(event)
 // HELPER FUNCTIONS
 function stLogistic(time,rate,dur)
 {
-    return 1 / (1 + Math.exp(-rate * ((time/dur)-1)))
+    return 1 / (1 + Math.exp(-rate * ((time/dur)-1)));
 }
+
+readSettingsCookies()

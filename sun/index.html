@@ -28,21 +28,30 @@
         <link rel="stylesheet" href="../css/settings.css">
         <img id="settingsButton" src="../images/settings.svg" onclick="settingsPage(this,1)" onmouseenter="settingsResize(this)" alt="Settings Button" title="Settings Button: Coming Soon">
         <div id="settingsPage">
-            <p style="color:#f00">
-                Settings
-
+            <p style="margin-left:12px;margin-top:12px;margin-right: 24px;">
+                This menu enables certain site functions, accessibility features, etc. 
                 <br>
-                Scrollbar
-
                 <br>
-                Planet Size
+                Any setting may be set, but if you would like that change to be persistent, hit the "checkbox"
+                <br>
+                <br>
+                This will set a first-party cookie. You're in control of exactly which cookies you set.
+                <br>
+                <br>
+                Un-checking a box removes the cookie :)
             </p>
+            <input type="checkbox" id="scrollbarSetting" name="scrollbarSetting" value="scrollbarSetting" onclick="changeSetting(this)">
+            <label for="scrollbarSetting" title="Hover Text <- Make this a better question icon">Enable Scrollbar (?)</label>
+            <select name="scrollbarSettingDropdown" id="scrollbarSettingDropdown">
+                <option value="0">None</option>
+                <option value="1">Typical</option>
+                <option value="2">All</option>
+            </select>
+            <br>
         </div>
         <div id="pageDimmer">
             
         </div>
-
-
 
         <script src="../scripts/resize.js"></script>
         <script src="../scripts/planetData.js"></script>
