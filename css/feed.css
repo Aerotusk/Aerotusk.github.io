@@ -109,8 +109,10 @@ iframe
 #headerBox
 {
   width:780px;
+  height:126px;
   position:relative;
   overflow:hidden;
+
 }
 
 #headerLeft

@@ -3,10 +3,11 @@
 function addNavbar()
 {
     // Add stylesheets to head
-    document.head.innerHTML += "<link rel='stylesheet' href='../css/planet_size.css'>";
-    document.head.innerHTML += "<link rel='stylesheet' href='../css/navbar.css'>";
+    // It was on this day that I learned you don't actually need to put stylesheets in head
 
     // Find Navbar div and add all the planets (with resize scripts as well)
+    // While this is still on Github, I think I'll keep boilerplate code like this in JS.
+    // Once I transition to using my own server (eventually?) maybe I learn how to do it server-side?
     let navbarDiv = document.getElementById("navbar");
     navbarDiv.innerHTML +=
     `

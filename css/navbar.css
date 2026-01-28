@@ -2,6 +2,7 @@
 {
     width:744px;
     height:72px;
+    min-height: 72px;
     position:relative;
     overflow:hidden;
     margin:auto;
