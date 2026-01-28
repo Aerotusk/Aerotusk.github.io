@@ -13,16 +13,15 @@ function readSettingsCookies()
 
 function changeSetting(event)
 {
-    let setting = document.getElementById(event.id);
-    let settingBox = setting.checked // Returns whatever checkbox is being set TO
-    let settingDrop = document.getElementById(event.id+"Dropdown")
-    if(settingBox)
+    let settingBox = document.getElementById(event.name + "Checkbox"); // Returns whatever checkbox is being set TO
+    let settingDrop = document.getElementById(event.name +"Dropdown");
+    if(settingBox.checked)
     {
-        setCookie(setting.name,settingDrop.value,365)
+        setCookie(event.name,settingDrop.value,365)
     }
     else
     {
-        delete_cookie(setting.name)
+        delete_cookie(event.name)
     }
 }
 
