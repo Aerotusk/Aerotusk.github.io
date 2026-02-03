@@ -46,6 +46,14 @@
                 <option value="2">All</option>
             </select>
             <br>
+            <input type="checkbox" id="animationSettingCheckbox" name="animationSetting" onclick="changeSetting(this)">
+            <label for="animationSetting" title="(Not actually implemented yet)">Enable Animations (?)</label>
+            <select id="animationSettingDropdown" name="animationSetting" onchange="changeSetting(this)">
+                <option value="0">None</option>
+                <option value="1">Reduced</option>
+                <option value="2">All</option>
+            </select>
+            <br>
             <script src="../scripts/cookies.js"></script>
             <script src="../scripts/settings.js"></script>
         </div>
