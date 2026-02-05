@@ -5,6 +5,7 @@ Make ellipses fade out in retrograde direction (dotted line with evenly spaced d
     + Use conic gradients, relatively new to CSS
 
 Add some quiet sounds on hover over planets (Not working atm, "promise" to not play sounds until interaction but hover doesn't count :/ )
+    Need to implement a "click to enter" on Sun, then also better support forward/back navigation
 
 Add moving shadows to the planets? Somehow idk
 
@@ -17,3 +18,11 @@ Add velocity to planet/list animations so they feel a bit more natural
 Redo the grow/shrink code so it runs smoother and can be used for absolutely any object (instead of just planets)
     ohhhh, maybe need to redo orbitAnimate so it changes planet coordinates instead of using translate/transform
     Also, maybe change the image origins to be at image center so growing and shrinking is easier? (transform-origin = center) WOW that would simplify things lol (and would have been really nice to know)
+
+Support no JS/no animations (planets in "correct" starting positions before the animation even starts)
+
+Reduce fps of all planets [except interloper]
+
+Add checkered background to settings tab
+
+(Honestly just give the settings tab a facelift)
