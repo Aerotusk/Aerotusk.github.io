@@ -1,4 +1,4 @@
-    <div id="navbar">       
+<div id="navbar">       
         <link rel='stylesheet' href='../css/planet_size.css'> 
         <link rel="stylesheet" href="../css/navbar.css">
         <script src="../scripts/resize.js"></script>       
@@ -15,3 +15,4 @@
         <a onmouseenter="planetResize(Pluto)"   href="../pluto/">   <img id="pluto"   src="../images/planets/Pluto.png"   alt="Pluto"         title="Webcomic"></a>
         <script src="../scripts/planetData.js"></script>
     </div>
+    

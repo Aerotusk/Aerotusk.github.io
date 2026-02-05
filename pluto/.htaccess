@@ -1,0 +1,6 @@
+# https://stackoverflow.com/a/16400848 See this for a better understanding of how to write all this
+
+RewriteEngine on
+RewriteRule ([0-9]+)/ index.php?url=$1 
+
+# FallbackResource //index.php # Some kind of 404
