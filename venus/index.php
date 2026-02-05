@@ -19,14 +19,7 @@
             </div>
         </div>
 
-        <!-- Adding stylesheets here (instead of in the script) prevents content jumping. It would still be nice to make it load  -->
-        <div id="navbar">    
-            <link rel='stylesheet' href='../css/planet_size.css'> 
-            <link rel="stylesheet" href="../css/navbar.css">
-            <script src="../scripts/resize.js"></script>       
-            <script src="../scripts/navbar.js"></script>     
-            <script src="../scripts/planetData.js"></script>
-        </div>
+        <?php include("../php/navbar.php")?>
         
         <div class="box">
             <h2>Photo Gallery</h2>
