@@ -27,8 +27,7 @@
             <h4>?????</h4>
         </div>
 
-        <div id="footerBox">
-            <script src="../scripts/footer.js"></script>  
-        </div>
+        <?php include("../php/footer.php")?>
+        
     </body>
 </html>

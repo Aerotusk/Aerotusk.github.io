@@ -41,9 +41,7 @@
                         </p>
                     </div>
 
-                    <div id="footerBox">
-                        <script src="../scripts/footer.js"></script>  
-                    </div>
+                    <?php include("../php/footer.php")?>
                 </div>
             </div>
             <div id="col3">

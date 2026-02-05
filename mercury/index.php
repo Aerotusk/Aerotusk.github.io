@@ -29,7 +29,5 @@
         <script>populatePlanets()</script>
     </div>
 
-    <div id="footerBox">
-        <script src="../scripts/footer.js"></script>  
-    </div>
+    <?php include("../php/footer.php")?>
 </html>

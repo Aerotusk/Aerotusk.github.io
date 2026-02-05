@@ -1,7 +1,8 @@
 <!-- WEBCOMIC TIME WOOOOOOOO! -->
 <!DOCTYPE html>
 <html>
-
+    <?php $comic=5 ?>
+    <?php $max_comic=5 ?>
     <head>
         <title>test5 (5) - Aerotusk</title>
         <link rel="stylesheet" href="../css/base.css">
@@ -13,6 +14,9 @@
     </head>
 
     <body>
+        <script>
+            console.log(<?php  if(str_contains($_SERVER['PHP_SELF'],)); ?>);
+        </script>
 
         <div id="headerBox">
             <div id="headerLeft">
@@ -44,9 +48,7 @@
             </p>
         </div>
 
-        <div id="footerBox">
-            <script src="../scripts/footer.js"></script>  
-        </div>
+        <?php include("../php/footer.php")?>
 
     </body>
 
