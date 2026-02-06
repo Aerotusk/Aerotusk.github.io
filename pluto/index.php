@@ -16,6 +16,8 @@
         }
     ?>
 
+    <?php include("comic_php/get-comic-sql.php") ?>
+
     <?php include("comic_php/head.php"); ?>
     
     <body>
@@ -25,19 +27,19 @@
         <?php include("comic_php/comic_navbar.php"); ?>
 
         <div class="box" style="text-align: center;">
-            <h2><?php echo "Comic " . $comic;?></h2>
-            <h4><?php echo "Comic " . $comic . " date";?></h4>
+            <h2><?php echo $comic_name;?></h2>
+            <h4><?php echo $comic_date;?></h4>
             <p class="bodyText" style="text-decoration:none">
 
                 <?php include("comic_php/navButtons.php");?>
 
-                <img id="comic" src=<?php echo $ind . "comics/" . $comic . ".jpg";?> alt=<?php echo "Comic " . $comic . " alt";?> title=<?php echo "Comic " . $comic . " title";?>/>
+                <img id="comic" src=<?php echo '"' . $ind . "comics/" . $comic_name . ".jpg" . '"';?> alt=<?php echo '"' . $comic_alt . '"';?> title=<?php echo '"' . $comic_title . '"';?>/>
 
                 <?php include("comic_php/navButtons.php");?>
             </p>
         </div>
 
-        <?php include("../php/footer.php");?>
+        <?php include("comic_php/comic_footer.php");?>
 
     </body>
 </html>
