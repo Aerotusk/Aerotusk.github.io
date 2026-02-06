@@ -22,4 +22,5 @@ body
 img
 {
   image-rendering: pixelated;
+  transform-origin:center;
 }

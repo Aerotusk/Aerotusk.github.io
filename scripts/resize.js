@@ -7,8 +7,8 @@ const resizeAmount = 0.1;
 
 function hoverSound()
 {    
-    // let trib = new Audio('../sounds/trib.ogg');
-    // trib.play(); // Throws an error when planets are hovered but screen has not been clicked / interacted with
+    let trib = new Audio('../sounds/trib.ogg');
+    trib.play(); // Throws an error when planets are hovered but screen has not been clicked / interacted with
 }
 
 function planetResize(planet)

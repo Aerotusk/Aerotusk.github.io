@@ -3,11 +3,11 @@
 <html lang="en-us">
     <head>
         <title>Sun - Aerotusk</title>
-        <link rel="stylesheet" href="../css/base.css">
-        <link rel="stylesheet" href="../css/planet_size.css">
+        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="/css/planet_size.css">
         <link rel="stylesheet" href="sun.css">
-        <link rel="icon" type="image/png" href="../images/favicon.png">
-        <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+        <link rel="icon" type="image/png" href="/images/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
     </head>
     <body class="content">
         <svg width="1510" height="500" style="position:absolute;top:50%;left:50%;transform:translate(-755px,-250px)">
@@ -23,24 +23,24 @@
             <ellipse rx="750" ry="250" cx="50%" cy="50%" style="fill:#0000;stroke:#93939355;stroke-width:3;"/>
         </svg>
         
-        <?php include("../php/settings.php") ?>
+        <?php include("/php/settings.php") ?>
 
-        <script src="../scripts/resize.js"></script>
-        <script src="../scripts/planetData.js"></script>
-        <script src="../scripts/ephemeris.js"></script>
-        <script src="../scripts/orbitAnimate.js"></script>
+        <script src="/scripts/resize.js"></script>
+        <script src="/scripts/planetData.js"></script>
+        <script src="/scripts/ephemeris.js"></script>
+        <script src="/scripts/orbitAnimate.js"></script>
 
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Sun)"     href=".">           <img id="sun"     class="orbiter"   src="../images/planets/Sun.png"     alt="The Sun"       title="Live Solar System View"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Mercury)" href="../mercury/"> <img id="mercury" class="orbiter"   src="../images/planets/Mercury.png" alt="Mercury"       title="Test Playground"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Venus)"   href="../venus/">   <img id="venus"   class="orbiter"   src="../images/planets/Venus.png"   alt="Venus"         title="Art Gallery"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Earth)"   href="../earth/">   <img id="earth"   class="orbiter"   src="../images/planets/Earth.png"   alt="Earth"         title="???"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Mars)"    href="../mars/">    <img id="mars"    class="orbiter"   src="../images/planets/Mars.png"    alt="Mars"          title="???"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Inter)"   href="../inter/">   <img id="inter"   class="orbiter"   src="../images/planets/Inter.png"   alt="The Interloper"title="News and Updates"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Jupiter)" href="../jupiter/"> <img id="jupiter" class="orbiter"   src="../images/planets/Jupiter.png" alt="Jupiter"       title="Completed Projects Portfolio"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Saturn)"  href="../saturn/">  <img id="saturn"  class="orbiter"   src="../images/planets/Saturn.png"  alt="Saturn"        title="Ongoing Projects Portfolio"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Uranus)"  href="../uranus/">  <img id="uranus"  class="orbiter"   src="../images/planets/Uranus.png"  alt="Uranus"        title="???"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Neptune)" href="../neptune/"> <img id="neptune" class="orbiter"   src="../images/planets/Neptune.png" alt="Neptune"       title="???"></a>
-        <a onmouseover="hoverSound()" onmouseenter="planetResize(Pluto)"   href="../pluto/">   <img id="pluto"   class="orbiter"   src="../images/planets/Pluto.png"   alt="Pluto"         title="Webcomic"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Sun)"     href=".">           <img id="sun"     class="orbiter"   src="/images/planets/Sun.png"     alt="The Sun"       title="Live Solar System View"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Mercury)" href="/mercury/"> <img id="mercury" class="orbiter"   src="/images/planets/Mercury.png" alt="Mercury"       title="Test Playground"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Venus)"   href="/venus/">   <img id="venus"   class="orbiter"   src="/images/planets/Venus.png"   alt="Venus"         title="Art Gallery"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Earth)"   href="/earth/">   <img id="earth"   class="orbiter"   src="/images/planets/Earth.png"   alt="Earth"         title="???"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Mars)"    href="/mars/">    <img id="mars"    class="orbiter"   src="/images/planets/Mars.png"    alt="Mars"          title="???"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Inter)"   href="/inter/">   <img id="inter"   class="orbiter"   src="/images/planets/Inter.png"   alt="The Interloper"title="News and Updates"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Jupiter)" href="/jupiter/"> <img id="jupiter" class="orbiter"   src="/images/planets/Jupiter.png" alt="Jupiter"       title="Completed Projects Portfolio"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Saturn)"  href="/saturn/">  <img id="saturn"  class="orbiter"   src="/images/planets/Saturn.png"  alt="Saturn"        title="Ongoing Projects Portfolio"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Uranus)"  href="/uranus/">  <img id="uranus"  class="orbiter"   src="/images/planets/Uranus.png"  alt="Uranus"        title="???"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Neptune)" href="/neptune/"> <img id="neptune" class="orbiter"   src="/images/planets/Neptune.png" alt="Neptune"       title="???"></a>
+        <a onmouseover="hoverSound()" onmouseenter="planetResize(Pluto)"   href="/pluto/">   <img id="pluto"   class="orbiter"   src="/images/planets/Pluto.png"   alt="Pluto"         title="Webcomic"></a>
         <script>calculateOrbits(planetList)</script>
     </body>
 </html>
