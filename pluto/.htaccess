@@ -3,4 +3,4 @@
 RewriteEngine on
 RewriteRule ([0-9]+)/ index.php?url=$1 
 
-# FallbackResource //index.php # Some kind of 404
+# FallbackResource /index.php # Some kind of 404?
