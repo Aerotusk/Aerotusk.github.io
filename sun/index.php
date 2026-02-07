@@ -23,7 +23,7 @@
             <ellipse rx="750" ry="250" cx="50%" cy="50%" style="fill:#0000;stroke:#93939355;stroke-width:3;"/>
         </svg>
         
-        <?php include("/php/settings.php") ?>
+        <?php include("../php/settings.php") ?>
 
         <script src="/scripts/resize.js"></script>
         <script src="/scripts/planetData.js"></script>
