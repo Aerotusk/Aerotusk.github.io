@@ -14,59 +14,59 @@ class Planet
     }
 }
 
-Sun = new Planet(
+sun = new Planet(
     pName=  "sun",
     dims=   72
 );
 
-Mercury = new Planet(
+mercury = new Planet(
     pName=  "mercury",
     dims=   40
 );
 
-Venus = new Planet(
+venus = new Planet(
     pName=  "venus",
     dims=   50
 );
 
-Earth = new Planet(
+earth = new Planet(
     pName=  "earth",
     dims=   52
 );
 
-Mars = new Planet(
+mars = new Planet(
     pName=  "mars",
     dims=   45
 );
 
-Inter = new Planet(
+inter = new Planet(
     pName=  "inter",
     dims=   30
 );
 
-Jupiter = new Planet(
+jupiter = new Planet(
     pName=  "jupiter",
     dims=   64
 );
 
-Saturn = new Planet(
+saturn = new Planet(
     pName=  "saturn",
     dims=   85
 );
 
-Uranus = new Planet(
+uranus = new Planet(
     pName=  "uranus",
     dims=   52
 );
 
-Neptune = new Planet(
+neptune = new Planet(
     pName=  "neptune",
     dims=   50
 );
 
-Pluto = new Planet(
+pluto = new Planet(
     pName=  "pluto",
     dims=   30
 );    
 
-planetList = [Sun, Mercury, Venus, Earth, Mars, Inter, Jupiter, Saturn, Uranus, Neptune, Pluto];
+planetList = [sun, mercury, venus, earth, mars, inter, jupiter, saturn, uranus, neptune, pluto];

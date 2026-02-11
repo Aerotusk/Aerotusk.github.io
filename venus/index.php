@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/feed.css">
         <link rel="stylesheet" href="venus.css">
-        <link rel="icon" type="image" href="../images/planets/Venus.png">
+        <link rel="icon" type="image" href="../images/planets/venus.png">
     </head>
     <body>
         <div id="headerBox">
@@ -15,7 +15,7 @@
                 <h2><em>Art Gallery</em></h2>
             </div>
             <div id="headerRight">
-                <a href="."><img id="planet" src="../images/planets/Venus.png" alt="Venus" title="Art Gallery"></a>
+                <a href="."><img id="planet" src="../images/planets/venus.png" alt="Venus" title="Art Gallery"></a>
             </div>
         </div>
 

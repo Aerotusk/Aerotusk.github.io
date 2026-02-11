@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/feed.css">
         <link rel="stylesheet" href="neptune.css">
-        <link rel="icon" type="image" href="../images/planets/Neptune.png">
+        <link rel="icon" type="image" href="../images/planets/neptune.png">
     </head>
     <body>
         <div id="headerBox">
@@ -15,7 +15,7 @@
                 <h2><em>???</em></h2>
             </div>
             <div id="headerRight">
-                <a href="."><img id="planet" src="../images/planets/Neptune.png" alt="Neptune" title="???"></a>
+                <a href="."><img id="planet" src="../images/planets/neptune.png" alt="Neptune" title="???"></a>
             </div>
         </div>
 

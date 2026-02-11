@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/feed.css">
         <link rel="stylesheet" href="inter.css">
-        <link rel="icon" type="image" href="../images/planets/Inter.png">
+        <link rel="icon" type="image" href="../images/planets/inter.png">
     </head>
     <body>
         <div id="headerBox">
@@ -15,7 +15,7 @@
                 <h2><em>Your source for all Aerotusk news</em></h2>
             </div>
             <div id="headerRight">
-                <a href="."><img id="planet" src="../images/planets/Inter.png" alt="The Interloper" title="Play Outer Wilds!"></a>
+                <a href="."><img id="planet" src="../images/planets/inter.png" alt="The Interloper" title="Play Outer Wilds!"></a>
             </div>
         </div>
 

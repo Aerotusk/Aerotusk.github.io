@@ -3,5 +3,5 @@
         <link rel="stylesheet" href="/css/base.css">
         <link rel="stylesheet" href="/css/feed.css">
         <link rel="stylesheet" href="/pluto/pluto.css">
-        <link rel="icon" type="image" href="/images/planets/Pluto.png">
+        <link rel="icon" type="image" href="/images/planets/pluto.png">
     </head>

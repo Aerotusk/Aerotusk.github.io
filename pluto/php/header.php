@@ -4,6 +4,6 @@
         <h2><em>???</em></h2>
     </div>
     <div id="headerRight">
-        <a href="."><img id="planet" src="/images/planets/Pluto.png" alt="Pluto" title="itty bitty boy"></a>
+        <a href="."><img id="planet" src="/images/planets/pluto.png" alt="Pluto" title="itty bitty boy"></a>
     </div>
 </div>

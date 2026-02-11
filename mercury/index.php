@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/feed.css">
         <link rel="stylesheet" href="mercury.css">
-        <link rel="icon" type="image" href="../images/planets/Mercury.png">
+        <link rel="icon" type="image" href="../images/planets/mercury.png">
     </head>
 
     <div id="headerBox">
@@ -15,7 +15,7 @@
             <h2><em>Feature Testing</em></h2>
         </div>
         <div id="headerRight">
-            <a href="."><img id="planet" src="../images/planets/Mercury.png" alt="Mercury" title="itty bitty boy"></a>
+            <a href="."><img id="planet" src="../images/planets/mercury.png" alt="Mercury" title="itty bitty boy"></a>
         </div>
     </div>
 

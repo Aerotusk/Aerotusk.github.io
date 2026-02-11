@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/feed.css">
         <link rel="stylesheet" href="uranus.css">
-        <link rel="icon" type="image" href="../images/planets/Uranus.png">
+        <link rel="icon" type="image" href="../images/planets/uranus.png">
     </head>
     <body>
         <div id="headerBox">
@@ -15,7 +15,7 @@
                 <h2><em>???</em></h2>
             </div>
             <div id="headerRight">
-                <a href="."><img id="planet" src="../images/planets/Uranus.png" alt="Uranus" title="???"></a>
+                <a href="."><img id="planet" src="../images/planets/uranus.png" alt="Uranus" title="???"></a>
             </div>
         </div>
 

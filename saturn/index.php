@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../css/feed.css">
         <link rel="stylesheet" href="../css/project.css">
         <link rel="stylesheet" href="saturn.css">
-        <link rel="icon" type="image" href="../images/planets/Saturn.png">
+        <link rel="icon" type="image" href="../images/planets/saturn.png">
     </head>
 <body>
         <!-- Add wrapper so they're independently scrollable -->
@@ -29,7 +29,7 @@
                             <h2><em>Ongoing Projects</em></h2>
                         </div>
                         <div id="headerRight">
-                            <a href="."><img id="planet" src="../images/planets/Saturn.png" alt="Saturn" title="Ooh, ahh"></a>
+                            <a href="."><img id="planet" src="../images/planets/saturn.png" alt="Saturn" title="Ooh, ahh"></a>
                         </div>
                     </div>
 
