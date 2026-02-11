@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule sun.css sun.php 
+
+# FallbackResource /index.php # Some kind of 404?
