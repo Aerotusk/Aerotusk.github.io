@@ -5,7 +5,8 @@ function calculateOrbits(planetList)
 {
     let id = null;
     clearInterval(id);
-    id = setInterval(animatePlanet,30);
+    animatePlanet();
+    id = setInterval(animatePlanet,100);
     function animatePlanet()
     {
         let date = new Date();
