@@ -14,7 +14,7 @@
         Un-checking a box removes the cookie :)
     </p>
     <input type="checkbox" id="scrollbarSettingCheckbox" name="scrollbarSetting" onclick="changeSetting(this)">
-    <label for="scrollbarSetting" title="(Not actually implemented yet)">Enable Scrollbar (?)</label>
+    <label for="scrollbarSettingCheckbox" title="(Not actually implemented yet)">Enable Scrollbar (?)</label>
     <select id="scrollbarSettingDropdown" name="scrollbarSetting" onchange="changeSetting(this)">
         <option value="0">None</option>
         <option value="1">Typical</option>
@@ -22,7 +22,7 @@
     </select>
     <br>
     <input type="checkbox" id="animationSettingCheckbox" name="animationSetting" onclick="changeSetting(this)">
-    <label for="animationSetting" title="(Not actually implemented yet)">Enable Animations (?)</label>
+    <label for="animationSettingCheckbox" title="(Not actually implemented yet)">Enable Animations (?)</label>
     <select id="animationSettingDropdown" name="animationSetting" onchange="changeSetting(this)">
         <option value="0">None</option>
         <option value="1">Reduced</option>
