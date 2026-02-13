@@ -16,13 +16,19 @@ Mobile version of the site LMAOOOOO
 Add velocity to planet/list animations so they feel a bit more natural
 
 Redo the grow/shrink code so it runs smoother and can be used for absolutely any object (instead of just planets)
-    ohhhh, maybe need to redo orbitAnimate so it changes planet coordinates instead of using translate/transform
-    Also, maybe change the image origins to be at image center so growing and shrinking is easier? (transform-origin = center) WOW that would simplify things lol (and would have been really nice to know)
+    ohhhh, maybe need to redo orbitAnimate so it changes planet coordinates instead of using translate/transform (absolutely should do this, reduces the number of calculations necessary)
+    Also, maybe change the image origins to be at image center so growing and shrinking is easier? (transform-origin = center) WOW that would simplify things lol (and would have been really nice to know) [Doesn't work that way sadly, only works for translate not for width and height] (OH except there's a scale() function for translate?? That will probably work (though no clue about its performance impact, probably will be mostly dependent on framerate))
 
-Support no JS/no animations (planets in "correct" starting positions before the animation even starts)
+Support no JS/no animations (planets in "correct" starting positions before the animation even starts, using PHP)
 
-Reduce fps of all planets [except interloper]
+Reduce fps of all planets [except interloper] (make this a setting/cookie, like site animation *MAXIMUM* framerate = off(don't animate?) low (10fps) medium (30fps) high (60fps) custom (xFPS?))
+    animation off should just use the ::hover attribute for planets to change their size
+    Also check for prefers-reduced-motion css media feature to automatically set animation rate if there's no cookie saved
 
 Add checkered background to settings tab
 
-(Honestly just give the settings tab a facelift)
+(Honestly just give the settings tab a facelift) 
+
+Test a different space background color for lower contrast?
+
+Add an accessibility page with a form to request other types of accessibility, tell me what types are/have been most helpful, etc.
