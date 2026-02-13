@@ -29,6 +29,11 @@
         <option value="2">All</option>
     </select>
     <br>
+    <div style="margins:auto;border:none">
+        <p style="margins:auto"><a href="/accessibility/"> Accessibility Notice </a></p>
+        <br>
+        <p style="margins:auto">&copy; 2015-<?php echo date("Y");?>, All Rights Reserved</p>
+    </div>
     <script src="../scripts/cookies.js"></script>
     <script src="../scripts/settings.js"></script>
 </div>
