@@ -1,0 +1,6 @@
+# https://stackoverflow.com/a/16400848 See this for a better understanding of how to write all this
+
+RewriteEngine on
+RewriteRule checker([a-zA-Z0-9]{8}).svg checker.php?color=$1 
+
+# FallbackResource /index.php # Some kind of 404?

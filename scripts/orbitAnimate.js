@@ -29,7 +29,7 @@ function calculateOrbits(planetList)
             xCoord -= size / 2;
             yCoord -= size / 2;
 
-            document.getElementById(obj).style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
+            document.getElementById(obj).style.translate =  xCoord + 'px ' + yCoord + 'px';
             document.getElementById(obj).style.zIndex = Math.round(yCoord+1000); // Sets draw order of planets
         }
     }

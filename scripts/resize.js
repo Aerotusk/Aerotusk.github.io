@@ -26,14 +26,10 @@ function planetResize(planet)
     {
         if(planet.step != step) // If the animation is still playing:
         {
-            let size = dim * (1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration) - resizeOffset));
+            let scaleVal = 1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration) - resizeOffset);
 
-            let xCoord = planet.org[0] - (size / 2);
-            let yCoord = planet.org[1] - (size / 2);
+            lmnt.style.scale = scaleVal;
 
-            lmnt.style.width = size + 'px';
-            lmnt.style.height = size + 'px';
-            lmnt.style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
             planet.step = step;
         }
 
