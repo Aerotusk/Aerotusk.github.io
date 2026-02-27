@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/css/settings.css">
 <img id="settingsButton" src="/images/settings.svg" onclick="settingsPage(this,1)" onmouseenter="settingsResize(this)" alt="Settings Button" title="Settings Button: Coming Soon">
 <div id="settingsPage">
-    <p style="margin-left:12px;margin-top:12px;margin-right: 24px;">
+    <p class="settingsText">
         This menu enables certain site functions, accessibility features, etc. 
         <br>
         <br>

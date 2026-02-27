@@ -25,8 +25,6 @@ Reduce fps of all planets [except interloper] (make this a setting/cookie, like 
     animation off should just use the ::hover attribute for planets to change their size
     Also check for prefers-reduced-motion css media feature to automatically set animation rate if there's no cookie saved
 
-Add checkered background to settings tab
-
 (Honestly just give the settings tab a facelift) 
 
 Test a different space background color for lower contrast?
