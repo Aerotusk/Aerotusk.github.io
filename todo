@@ -8,12 +8,13 @@ Add some quiet sounds on hover over planets (Not working atm, "promise" to not p
     Need to implement a "click to enter" on Sun, then also better support forward/back navigation
 
 Add moving shadows to the planets? Somehow idk
+    Maybe rotate the planets as they go around the sun? Definitely rotate the Interloper so it's more accurate
 
 Make the solar system rotatable (stretch goal)
 
 Mobile version of the site LMAOOOOO
 
-Add velocity to planet/list animations so they feel a bit more natural
+Add velocity to planet/list animations so they feel a bit more natural?
 
 Support no JS/no animations (planets in "correct" starting positions before the animation even starts, using PHP)
 
@@ -21,8 +22,8 @@ Reduce fps of all planets [except interloper] (make this a setting/cookie, like 
     animation off should just use the ::hover attribute for planets to change their size
     Also check for prefers-reduced-motion css media feature to automatically set animation rate if there's no cookie saved
 
-(Honestly just give the settings tab a facelift) 
+(Honestly just give the settings tab a facelift) -> Make custom checkboxes and dropdowns to match the website theme
 
-Test a different space background color for lower contrast?
+Test a different space background color for lower contrast? Maybe also include more stars?
 
 Add an accessibility page with a form to request other types of accessibility, tell me what types are/have been most helpful, etc.
