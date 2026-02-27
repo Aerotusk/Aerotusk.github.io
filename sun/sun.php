@@ -2,7 +2,7 @@
 html 
 {
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }

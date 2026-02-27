@@ -24,6 +24,14 @@
     height: 100%;
     transform:translate(304px,0px);
     z-index: 2001;
+
+    overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+#settingsPage::-webkit-scrollbar
+{ 
+    display: none;  /* Older Safari and Chromium */
 }
 
 #pageDimmer
@@ -51,6 +59,32 @@
     font-size:18px;
     font-family:Helvetica,Arial;
     margin-top:26px;
-    margin-bottom:19.5px;
+    margin-bottom:24px;
+    line-height:1.333333333;
+}
+
+.setting
+{
+    margin:auto;
+    margin-left:26px;
+    border:0;
+    padding:0;
+    font-size:18px;
+    font-family:Helvetica,Arial;
+    margin-top:0px;
+    margin-bottom:30px;
+    line-height:1.333333333;
+}
+
+.settingLabel
+{
+    margin:auto;
+    margin-left:10px;
+    border:0;
+    padding:0;
+    font-size:18px;
+    font-family:Helvetica,Arial;
+    margin-top:0px;
+    margin-bottom:24px;
     line-height:1.333333333;
 }

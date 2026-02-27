@@ -13,26 +13,26 @@
         <br>
         Un-checking a box removes the cookie :)
     </p>
-    <input type="checkbox" id="scrollbarSettingCheckbox" name="scrollbarSetting" onclick="changeSetting(this)">
-    <label for="scrollbarSettingCheckbox" title="(Not actually implemented yet)">Enable Scrollbar (?)</label>
+    <input class="setting" type="checkbox" id="scrollbarSettingCheckbox" name="scrollbarSetting" onclick="changeSetting(this)">
+    <label class="settingLabel" for="scrollbarSettingCheckbox" title="(Not actually implemented yet)">Scrollbar (?)</label>
     <select id="scrollbarSettingDropdown" name="scrollbarSetting" onchange="changeSetting(this)">
         <option value="0">None</option>
         <option value="1">Typical</option>
         <option value="2">All</option>
     </select>
     <br>
-    <input type="checkbox" id="animationSettingCheckbox" name="animationSetting" onclick="changeSetting(this)">
-    <label for="animationSettingCheckbox" title="(Not actually implemented yet)">Enable Animations (?)</label>
+    <input class="setting" type="checkbox" id="animationSettingCheckbox" name="animationSetting" onclick="changeSetting(this)">
+    <label class="settingLabel" for="animationSettingCheckbox" title="(Not actually implemented yet)">Animations (?)</label>
     <select id="animationSettingDropdown" name="animationSetting" onchange="changeSetting(this)">
         <option value="0">None</option>
         <option value="1">Reduced</option>
         <option value="2">All</option>
     </select>
     <br>
-    <div style="margins:auto;border:none">
-        <p style="margins:auto"><a href="/accessibility/"> Accessibility Notice </a></p>
+    <div class="settingsText" style="margins:auto;border:none">
+        <p style="margins:auto;margin-top:18px;text-align:center"><a href="/accessibility/"> Accessibility Notice </a></p>
         <br>
-        <p style="margins:auto">&copy; 2015-<?php echo date("Y");?>, All Rights Reserved</p>
+        <p style="margins:auto;margin-top:8px;text-align:center">&copy; 2015-<?php echo date("Y");?>, All Rights Reserved</p>
     </div>
     <script src="../scripts/cookies.js"></script>
     <script src="../scripts/settings.js"></script>
