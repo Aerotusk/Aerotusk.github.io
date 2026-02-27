@@ -94,46 +94,6 @@ function settingsPage(event,dir)
     }
 }
 
-function settingsResize(event)
-{
-    let lmnt = document.getElementById(event.id);
-    
-    let anId = null;
-    clearInterval(anId);
-    anId = setInterval(stAnimate,15); // Frame period, in ms
-    let tempStep = 0;
-    let step = 1;
-    let dim = 48;
-    let xOrg = -12;
-    let yOrg = 12;
-    function stAnimate()
-    {
-        if(tempStep != step) // If the animation is still playing:
-        {
-            let size = dim * (1 + sResizeAmount * (stLogistic(step + sAnimationShift,sAnimationRate,sAnimationDuration)));
-
-            let xCoord = xOrg + ((size - dim)/2);
-            let yCoord = yOrg - ((size - dim)/2);
-
-            lmnt.style.width = size + 'px';
-            lmnt.style.height = size + 'px';
-            lmnt.style.transform = 'translate('+ xCoord + 'px, ' + yCoord + 'px)';
-            tempStep = step;
-        }
-
-        if(lmnt.matches(':hover')){ // If mouse is still over the planet:
-            if(step < (sAnimationDuration * 2) - sAnimationShift - 55) {
-                step++;
-            }
-        } else {
-            if(step > 0) {
-                step--;
-            } else {
-                clearInterval(anId);
-            }
-        }
-    }
-}
 
 // HELPER FUNCTIONS
 function stLogistic(time,rate,dur)

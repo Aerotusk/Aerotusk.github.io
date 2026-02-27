@@ -4,6 +4,7 @@ const animationDuration = 80;
 const animationShift = 74;
 const animationRate = 23;
 const resizeAmount = 0.1;
+const resizeOffset = logistic(animationShift,animationRate,animationDuration);
 
 function hoverSound()
 {    
@@ -11,27 +12,27 @@ function hoverSound()
     trib.play(); // Throws an error when planets are hovered but screen has not been clicked / interacted with
 }
 
-function planetResize(planet)
+function growShrink(event)
 {
-    let step = planet.step;
-    let dim = planet.dims;
-    let lmnt = document.getElementById(planet.pName);
-    let resizeOffset = logistic(animationShift,animationRate,animationDuration)
-    
+    let lmnt = document.getElementById(event.id);
+    if(lmnt.hasOwnProperty('animationStep'))
+    { // Animation already running!
+        return; 
+    }
+    else   
+    { // Animation not running, get started!
+        lmnt.animationStep = 0;
+    }
+
     let id = null;
     clearInterval(id);
-    id = setInterval(plAnimate,15); // Frame period, in ms
+    id = setInterval(resizeElement,15); // Frame period, in ms
     
-    function plAnimate()
+    function resizeElement()
     {
-        if(planet.step != step) // If the animation is still playing:
-        {
-            let scaleVal = 1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration) - resizeOffset);
-
-            lmnt.style.scale = scaleVal;
-
-            planet.step = step;
-        }
+        let step = lmnt.animationStep;
+        let scaleVal = 1 + resizeAmount * (logistic(step + animationShift,animationRate,animationDuration) - resizeOffset);
+        lmnt.style.scale = scaleVal;
 
         if(lmnt.matches(':hover')){ // If mouse is still over the planet:
             if(step < (animationDuration * 2) - animationShift - 55) {
@@ -42,8 +43,11 @@ function planetResize(planet)
                 step--;
             } else {
                 clearInterval(id);
+                delete lmnt.animationStep;
+                return;
             }
         }
+        lmnt.animationStep = step;
     }
 }
 

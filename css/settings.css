@@ -6,7 +6,8 @@
     position:absolute;
     top:0%;
     right:0%;
-    transform:translate(-12px,12px);
+    translate:-12px 12px;
+    transform-origin: center;
     z-index: 2001;
 }
 

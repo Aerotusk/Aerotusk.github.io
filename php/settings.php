@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/css/settings.css">
-<img id="settingsButton" src="/images/settings.svg" onclick="settingsPage(this,1)" onmouseenter="settingsResize(this)" alt="Settings Button" title="Settings Button: Coming Soon">
+<img id="settingsButton" src="/images/settings.svg" onclick="settingsPage(this,1)" onmouseenter="growShrink(this)" alt="Settings Button" title="Settings Button: Coming Soon">
 <div id="settingsPage">
     <p class="settingsText">
         This menu enables certain site functions, accessibility features, etc. 
@@ -27,6 +27,15 @@
         <option value="0">None</option>
         <option value="1">Reduced</option>
         <option value="2">All</option>
+    </select>
+    <br>
+    <input class="setting" type="checkbox" id="framerateSettingCheckbox" name="framerateSetting" onclick="changeSetting(this)">
+    <label class="settingLabel" for="framerateSettingCheckbox" title="(Not actually implemented yet)">Max Framerate (?)</label>
+    <select id="framerateSettingDropdown" name="framerateSetting" onchange="changeSetting(this)">
+        <option value="0">1 FPS</option>
+        <option value="1">30 FPS</option>
+        <option value="2">60 FPS</option>
+        <option value="3">Custom</option>
     </select>
     <br>
     <div class="settingsText" style="margins:auto;border:none">
