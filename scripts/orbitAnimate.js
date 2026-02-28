@@ -24,8 +24,7 @@ function calculateOrbits(planetList)
 
             let xCoord = -planet.rad * Math.sin((planet.pos - firstPtAries + orbitTime) * Math.PI / 180) * 1.5; //Make it kinda elliptical
             let yCoord = -planet.rad * Math.cos((planet.pos - firstPtAries + orbitTime) * Math.PI / 180) / 2;
-
-            planet.org = [xCoord,yCoord];
+            
             xCoord -= size / 2;
             yCoord -= size / 2;
 

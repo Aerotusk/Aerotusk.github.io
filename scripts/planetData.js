@@ -1,12 +1,10 @@
 class Planet
 {   // Default requires name, dimensions, origin, step. 
     // For orbit calculations, include [orbit]radius, period, position (also needs a reference date specified separately)
-    constructor(name,dimensions,origin=[0,0],step=0,radius=0,period=1/24,position=0)
+    constructor(name,dimensions,radius=0,period=1/24,position=0)
     {
         this.pName=name;
         this.dims=dimensions;
-        this.org=origin;
-        this.step=step;
 
         this.rad=radius;
         this.per=period;

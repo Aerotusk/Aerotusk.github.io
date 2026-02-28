@@ -25,18 +25,13 @@ p /* overrides only */
 
 .box /* overrides only */
 {
-  background-image: url("..\\images\\checkers\\checkerEFCF1A40.svg");
+  background-image: url("/images/checkers/checkerEFCF1A40.svg");
   border-color:#efcf1adb;
 }
 
 .planet
 {
   position:absolute;
-}
-
-.icon
-{
-  fill:#f8de76;
 }
 
 /*Everything related to double column format*/

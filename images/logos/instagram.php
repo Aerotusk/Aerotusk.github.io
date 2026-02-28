@@ -1,4 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" style="fill:#ffff">
+<?php 
+    header("Content-type: image/svg+xml"); 
+    if(empty($_GET['color']))
+    {
+        $color="#bb000040"; 
+    }
+    else
+    {
+        $color=$_GET['color'];
+    }
+?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" style="fill:<?php echo '#' . $color;?>">
 <path d="M3,0.5
   A2.5,2.5 0,0,0 0.5,3V7A2.5,2.5 0,0,0 3,9.5H7A2.5,2.5 0,0,0 9.5,7V3A2.5,2.5 0,0,0 7,0.5Z
   m0,1

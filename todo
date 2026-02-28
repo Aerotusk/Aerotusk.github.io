@@ -27,3 +27,7 @@ Reduce fps of all planets [except interloper] (make this a setting/cookie, like 
 Test a different space background color for lower contrast? Maybe also include more stars?
 
 Add an accessibility page with a form to request other types of accessibility, tell me what types are/have been most helpful, etc.
+
+Look into using a sprite sheet for rendering the planets
+
+Turn .css files into .php and save colors as variables to be used by other files? Would make footer icon coloring a bit easier (but not sure if it would make everything else easier)

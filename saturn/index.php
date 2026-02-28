@@ -41,6 +41,7 @@
                         </p>
                     </div>
 
+                    <?php $iconColor='dacd98db';?>
                     <?php include("../php/footer.php")?>
                 </div>
             </div>

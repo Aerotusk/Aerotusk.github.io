@@ -37,6 +37,7 @@
             </p>
         </div>
 
+        <?php $iconColor='A77D63db';?>
         <?php include("../php/footer.php");?>
 
     </body>

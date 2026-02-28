@@ -29,5 +29,6 @@
         <script>populatePlanets()</script>
     </div>
 
+    <?php $iconColor='999999db';?>
     <?php include("../php/footer.php")?>
 </html>

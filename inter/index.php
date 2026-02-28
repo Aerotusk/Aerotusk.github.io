@@ -91,6 +91,8 @@
                 Ad litora torquent per conubia nostra inceptos himenaeos.
             </p>
         </div>
+
+        <?php $iconColor='86acbadb';?>
         <?php include("../php/footer.php")?>
     </body>
 </html>

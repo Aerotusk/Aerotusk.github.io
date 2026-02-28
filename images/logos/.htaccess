@@ -1,0 +1,12 @@
+# https://stackoverflow.com/a/16400848 See this for a better understanding of how to write all this
+
+RewriteEngine on
+RewriteRule instagram([a-zA-Z0-9]{8}).svg instagram.php?color=$1 
+
+RewriteEngine on
+RewriteRule twitch([a-zA-Z0-9]{8}).svg twitch.php?color=$1 
+
+RewriteEngine on
+RewriteRule youtube([a-zA-Z0-9]{8}).svg youtube.php?color=$1 
+
+# FallbackResource /index.php # Some kind of 404?

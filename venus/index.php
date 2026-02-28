@@ -32,6 +32,7 @@
             </div>            
         </div>
 
+        <?php $iconColor='f8de76db';?>
         <?php include("../php/footer.php")?>
     </body>
 </html>

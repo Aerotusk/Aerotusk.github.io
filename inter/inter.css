@@ -25,16 +25,11 @@ p /* overrides only */
 
 .box /* overrides only */
 {
-  background-image: url("..\\images\\checkers\\checker86ACBA40.svg");
+  background-image: url("/images/checkers/checker86ACBA40.svg");
   border-color:#86acbadb;
 }
 
 .planet
 {
   position:absolute;
-}
-
-.icon
-{
-  fill:#86acbadb;
 }

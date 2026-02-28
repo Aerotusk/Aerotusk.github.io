@@ -44,7 +44,7 @@
                             Or, if you know the project codename, click on it on the left side!
                         </p>
                     </div>
-
+                    <?php $iconColor='DEC67Ddb';?>
                     <?php include("../php/footer.php")?>
                 </div>
             </div>

@@ -20,7 +20,7 @@
     border-width:2px;
     border-color:#ccc;
     border-radius:10px;
-    background-image: url("/images/checkers//checkerFFFFFF80.svg");
+    background-image: url("/images/checkers/checkerFFFFFF80.svg");
     width: 300px;
     height: 100%;
     transform:translate(304px,0px);
@@ -73,7 +73,7 @@
     font-size:18px;
     font-family:Helvetica,Arial;
     margin-top:0px;
-    margin-bottom:30px;
+    margin-bottom:30.5px;
     line-height:1.333333333;
 }
 

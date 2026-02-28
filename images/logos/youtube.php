@@ -1,3 +1,14 @@
+<?php 
+    header("Content-type: image/svg+xml"); 
+    if(empty($_GET['color']))
+    {
+        $color="#bb000040"; 
+    }
+    else
+    {
+        $color=$_GET['color'];
+    }
+?>
 <svg viewBox="0 0 660 415" xmlns="http://www.w3.org/2000/svg">
 <path
 d="
@@ -19,5 +30,5 @@ c -7,25 -26,45 -52,52
 25,7 45,26 52,52
 12,45 12,140 12,140
 0,0 0,95 -12,140"
-style="fill:#ffff"/>
+style="fill:<?php echo '#' . $color;?>"/>
 </svg>

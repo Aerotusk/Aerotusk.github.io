@@ -24,7 +24,7 @@ p  /* overrides only */
 
 .box /* overrides only */
 {
-  background-image: url("..\\images\\checkers\\checker97979740.svg");
+  background-image: url("/images/checkers/checker97979740.svg");
   border-color:#979797DB;
 }
 
@@ -42,9 +42,4 @@ p  /* overrides only */
     position:absolute;
     top:0%;
     left:0%;
-}
-
-.icon
-{
-  fill:#818181;
 }

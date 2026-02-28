@@ -25,10 +25,5 @@ p
 #project /* Centered (offset due to list?) */
 {
   border-color:#dec67ddb;
-  background-image: url("..\\images\\checkers\\checkerDEC67D40.svg");
-}
-
-.icon
-{
-  fill: #dacd98;
+  background-image: url("/images/checkers/checkerDEC67D40.svg");
 }
