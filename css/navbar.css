@@ -16,77 +16,81 @@
 #sun
 {
     left:34px;
-    top:50%;
-    position:absolute;
 }
 
 #mercury
 {
     left:111px;
-    top:50%;
-    position:absolute;
 }
 
 #venus
 {
     left:177px;
-    top:50%;
-    position:absolute;
 }
 
 #earth
 {
     left:249px;
-    top:50%;
-    position:absolute;
 }
 
 #mars
 {
     left:318.5px;
-    top:50%;
-    position:absolute;
 }
 
 #inter
 {
-
     left:375px;
-    top:50%;
-    position:absolute;
 }
 
 #jupiter
 {
     left:439px;
-    top:50%;
-    position:absolute;
 }
 
 #saturn
 {
     left:525px;
-    top:50%;
-    position:absolute;
 }
 
 #uranus
 {
     left:603px;
-    top:50%;
-    position:absolute;
 }
 
 #neptune
 {
     left:675px;
-    top:50%;
-    position:absolute;
 }
 
 #pluto
 {
     left:736px;
-    top:50%;
-    position:absolute;
 }
+
+.navbarPlanet
+{
+  top:50%;
+  position:absolute;
+  will-change: transform;
+  transition: 500ms ease;
+}
+
+.navbarPlanet:hover
+{
+  transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) 
+{
+    .navbarPlanet 
+    {
+    transition: none;
+    }
+    
+    .navbarPlanet:hover
+    {
+    transform: scale(1.05);
+    }
+}
+

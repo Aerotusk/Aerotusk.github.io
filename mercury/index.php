@@ -21,13 +21,14 @@
 
     <?php include("../php/navbar.php")?>
 
-    <div class="box" id="planetGrowShrinkTest">
+    <!-- This still works, but it's no longer the way I do scaling -->
+    <!-- <div class="box" id="planetGrowShrinkTest">
         <h2>Planet Hover Speed and Latency</h2>
         <h4>17 July, 2025</h4>
         <script src="a1_planetGrowShrink.js"></script>
         <div id="planetGrowShrinkDiv"></div>
         <script>populatePlanets()</script>
-    </div>
+    </div> -->
 
     <?php $iconColor='999999db';?>
     <?php include("../php/footer.php")?>

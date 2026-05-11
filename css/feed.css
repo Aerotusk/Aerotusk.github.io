@@ -96,7 +96,7 @@ iframe
 
 .bodyText
 {
-  width:670px; /*iframe width */
+  width:670px; /*iframe width*/
   margin:auto;
   font-size:18px;
   font-family:Helvetica,Arial;
@@ -145,6 +145,7 @@ iframe
   display:block;
   margin:auto;
 }
+
 
 #footerBox
 {

@@ -14,8 +14,29 @@ html::-webkit-scrollbar
 
 .orbiter
 {
-    position:absolute;
-    top:50%;
-    left:50%;
-    z-index: 0;
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index: 0;
+  transition: 500ms ease; this
+}
+<!-- transition easing creates a neat effect on page loading, maybe keep? -->
+
+.orbiter:hover
+{
+  transform: scale(1.1);
+}
+
+
+@media (prefers-reduced-motion: reduce) 
+{
+    .orbiter 
+    {
+    transition: none;
+    }
+    
+    .orbiter:hover
+    {
+    transform: scale(1.05);
+    }
 }
